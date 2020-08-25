@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/jaychsu/ddedupdf/issues"
   },
-  "homepage": "https://github.com/jaychsu/ddedupdf#readme"
+  "homepage": "https://github.com/jaychsu/ddedupdf#readme",
+  "dependencies": {
+    "@react-pdf/renderer": "^1.6.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }

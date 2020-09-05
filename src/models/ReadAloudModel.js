@@ -3,11 +3,10 @@ import {
   View,
   Text,
   Link,
-  Image,
   StyleSheet,
 } from '@react-pdf/renderer'
-import fs from 'fs'
 import Label from '../components/Label'
+import Image from '../components/Image'
 import {
   isHTML,
 } from '../helpers'
@@ -120,14 +119,11 @@ const ReadAloudModel = ({
               <Text style={styles.sectionTitle}>{ `${title}：` }</Text>
               { typeof question.analysis[key] === 'string'
                 ? isHTML(question.analysis[key])
-                  ? <Image src={{
-                      data: fs.readFileSync(`${__dirname}/../images/model-${id}-${key}.png`),
-                      format: 'png',
-                    }} />
+                  ? <Image src={`file://images/model-${id}-${key}.png`} />
                   : <View style={styles.sectionContent}>{question.analysis[key].split('').map((c, i) => <Text key={i}>{c}</Text>)}</View>
                 : key.startsWith('explainVideo')
-                  ? <Link href={`https://www.91ddedu.com/question/${id}`} style={styles.link}>{ `此题有视频讲解，请见网站及 APP` }</Link>
-                  : <Link href={`https://www.91ddedu.com/question/${id}`} style={styles.link}>{ `此题有音频示范，请见网站及 APP` }</Link>
+                  ? <Link href={`https://www.91ddedu.com/question/${id}`} style={styles.link}>此题有视频讲解，请见网站及 APP</Link>
+                  : <Link href={`https://www.91ddedu.com/question/${id}`} style={styles.link}>此题有音频示范，请见网站及 APP</Link>
               }
             </View>
           ))

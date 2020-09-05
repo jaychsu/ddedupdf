@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactPDF, {
   Document,
-  Page,
   Font,
-  StyleSheet,
 } from '@react-pdf/renderer'
 
+import BasicLayout from './layouts/BasicLayout'
 import ReadAloudModel from './models/ReadAloudModel'
 
 import data from './data'
@@ -16,21 +15,14 @@ Font.register({
   src: `${__dirname}/fonts/msyh.ttf`,
 })
 
-const styles = StyleSheet.create({
-  doc: {
-    fontSize: 10,
-    fontFamily: 'MicrosoftYaHei',
-  },
-})
-
 const $Container = (
   <Document>
-    <Page size="A4" style={styles.doc}>
+    <BasicLayout>
       <ReadAloudModel
         sequence={1}
         model={data[0][0]}
       />
-    </Page>
+    </BasicLayout>
   </Document>
 )
 

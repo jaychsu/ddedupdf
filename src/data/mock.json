@@ -1,0 +1,103 @@
+[[{
+  "question": {
+    "title": "Electric Car / 电力汽车",
+    "tags": [
+      "forecast",
+      "frequency",
+      "complex_normal"
+    ],
+    "published": true,
+    "status": 4,
+    "num": 2152,
+    "type": "PTE_RA",
+    "draft": {
+
+    },
+    "analysis": {
+      "translation_zh": "大学一年级学生设计并制造了一辆开创性的电动汽车，它可以自行充电。来自悉尼大学工程学院的50名学生花了5个月的时间，用胶合板、泡沫塑料和玻璃纤维制造出了芒果概念车。他们开发了规格并手工制造了这辆车。这是一个相当激进的设计:一个四轮驱动，每个轮子都有一个马达。",
+      "reading": "<p style=\"text-align:justify;\" class=\"MsoNormal\">First-year university students have designed<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> built <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> groundbreaking electri<data style=\"color:rgba(255, 192, 0, 1)\">c</data> car<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">that</cite> recharges itself. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> Fifty students <cite style=\"color:rgba(124, 123, 124, 1)\">from</cite> <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> University of Sydney’s Faculty <cite style=\"color:rgba(124, 123, 124, 1)\">of</cite> Engineering/ spent five months working together <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <u>bits <cite style=\"color:rgba(124, 123, 124, 1)\">of</cite></u> plywood<abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr>, foam <abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr><cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> fiberglass<abbr style=\"color:rgba(255, 0, 0, 1)\">↓</abbr><bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">to</cite> build <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> ManGo concept car. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi><cite style=\"color:rgba(124, 123, 124, 1)\">They</cite> develope<data style=\"color:rgba(255, 192, 0, 1)\">d</data> <cite style=\"color:rgba(124, 123, 124, 1)\">th</cite>e specifications<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> hand built <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> car. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi>It&#x27;s <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> pretty radical design: <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> four-wheel drive <cite style=\"color:rgba(124, 123, 124, 1)\"><u>with</u></cite> <cite style=\"color:rgba(124, 123, 124, 1)\"><u>a</u></cite> motor <cite style=\"color:rgba(124, 123, 124, 1)\">in</cite> each wheel. </p><p></p>",
+      "exampleAudio": {
+        "url": "https://downloads.91ddedu.com/undefined54f3ed47-07fd-4276-86b1-5a72595cc966.mp3"
+      },
+      "explainVideo_zh": {
+        "url": "https://downloads.91ddedu.com/uploads/video/2152/773feb58-4028-4829-b78a-33f73165b748.mp4",
+        "cover": "https://downloads.91ddedu.com/uploads/image/2152/6803d040-58a6-44cc-83ef-c40f9fcbd8ce.png"
+      }
+    },
+    "createdAt": "2020-07-14T02:24:49.245Z",
+    "updatedAt": "2020-07-16T08:17:05.780Z",
+    "content": "First year university students have designed and built a groundbreaking electric car that recharges itself. Fifty students from the University of Sydney's Faculty of Engineering spent five months working together bits of plywood, foam and fiberglass to build the ManGo concept car. They developed the specifications and hand built the car. It's a pretty radical design: a four wheel drive with a motor in each wheel.",
+    "id": "5f0d176df91248000b266013",
+    "typeObj": {
+      "key": "PTE_RA",
+      "label": "PTE RA",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "exampleAudio",
+          "label": "外教示范音频",
+          "title": "外教示范",
+          "abbr": "范",
+          "color": "#B39487",
+          "type": "audio",
+          "options": {
+            "types": [
+              "mpeg"
+            ]
+          }
+        },
+        {
+          "key": "reading",
+          "label": "建议读法",
+          "title": "建议读法",
+          "abbr": "读",
+          "color": "#F4B55C",
+          "type": "reading"
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "RA",
+      "title": "Read Aloud",
+      "introduction": "RA在练习时主要做到单词发音的准确及断句上面的注意，此题分值大对阅读分数有较高影响，机经命中率中等。",
+      "instruction": "Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {
+
+        }
+      }
+    },
+    "testedCount": 3,
+    "submissionCount": 0
+  }
+}]]

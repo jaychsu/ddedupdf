@@ -2,9 +2,15 @@
   "name": "ddedupdf",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "htmlimage": "babel-node ./bin/html-string-to-image.js",
+    "prestart": "npm run htmlimage",
+    "start": "webpack-dev-server --open --mode development --config webpack.web.config.js",
+    "prebuild": "npm run htmlimage",
+    "build": "webpack --mode production --config webpack.web.config.js",
+    "prepdf": "npm run htmlimage",
+    "pdf": "mkdir -p pdf; babel-node ./src/index.pdf.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +26,21 @@
     "@react-pdf/renderer": "^1.6.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-html-to-image": "^3.0.1",
+    "trim-image": "^1.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

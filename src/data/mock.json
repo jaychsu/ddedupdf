@@ -456,5 +456,186 @@
         "submissionCount": 0
       }
     }
+  ],
+  [
+    {
+      "question": {
+        "title": "Manufacture / 制造",
+        "tags": [
+          "frequency",
+          "complex_hard",
+          "PTE_DI_FLOW_TAG"
+        ],
+        "published": true,
+        "status": 4,
+        "num": 1480,
+        "type": "PTE_DI",
+        "draft": {},
+        "analysis": {
+          "refAnswer": "This graph shows information about manufacture. \nAccording to the graph, we can see that it starts at Manufacturer which is the first stage of the whole cycle.\nThen, it would go to the next stage, which is called Retailer. \nAccording to the graph, it would go to the next stage of the cycle, which is called Consumer. \nAccording to the graph, we can see that it would to the next stage of the cycle, which is called Recycler. \nOverall, it is very interesting.",
+          "refAnswerAudio": {
+            "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/audio/DIx1/DIx1F.m4a"
+          }
+        },
+        "createdAt": "2020-07-17T14:04:01.475Z",
+        "updatedAt": "2020-08-26T05:06:30.982Z",
+        "content": {
+          "images": [
+            {
+              "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/image/DIx1/DIx1.png"
+            }
+          ]
+        },
+        "id": "5f11afd199eed8000b92a2ff",
+        "typeObj": {
+          "key": "PTE_DI",
+          "label": "PTE DI",
+          "analysisList": [
+            {
+              "key": "refAnswer",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "refAnswerAudio",
+              "label": "优秀示范",
+              "title": "优秀示范",
+              "abbr": "范",
+              "color": "#B39487",
+              "type": "audio",
+              "options": {
+                "types": [
+                  "mpeg",
+                  "mp4",
+                  "mp4a-latm"
+                ]
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            }
+          ],
+          "abbr": "DI",
+          "title": "Describe Image  ",
+          "introduction": "DI在练习时一定做到模板的熟练套用及流利读的保证，此题机经命中率较高，平时练习以机经题目为主，按图片种类突破练习。",
+          "instruction": "Look at the graph below. In 25 seconds, please speak into the microphone and describe in detail what the graph is showing. You will have 40 seconds to give your response.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        },
+        "testedCount": 0,
+        "submissionCount": 0
+      }
+    },
+    {
+      "question": {
+        "title": "Fungus gnat lifecycle / 蕈蚊生命周期",
+        "tags": [
+          "complex_hard",
+          "PTE_DI_FLOW_TAG"
+        ],
+        "published": true,
+        "status": 4,
+        "num": 1481,
+        "type": "PTE_DI",
+        "draft": {},
+        "analysis": {
+          "refAnswer": "This graph shows information about Fungus Lifecycle is about 28 days.    \nAccording to the graph, we can see that,  \nIt starts at Eggs for 4 to 6 days, which is the first stage of this whole cycle.  \nThen it would go to the next stage of the cycle, which is called Larva for 12 to 14 days. \nThen it would go to the next stage of the cycle, which is called Pupa for 3 to 6 days. \nThen it would go to the final stage of the cycle, which is called Adult. \nOverall, it is very interesting.",
+          "refAnswerAudio": {
+            "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/audio/DI1/DI1F.m4a"
+          }
+        },
+        "createdAt": "2020-07-17T14:04:01.729Z",
+        "updatedAt": "2020-08-18T01:32:04.517Z",
+        "content": {
+          "images": [
+            {
+              "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/image/DI1/DI1.jpg"
+            }
+          ]
+        },
+        "id": "5f11afd199eed8000b92a300",
+        "typeObj": {
+          "key": "PTE_DI",
+          "label": "PTE DI",
+          "analysisList": [
+            {
+              "key": "refAnswer",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "refAnswerAudio",
+              "label": "优秀示范",
+              "title": "优秀示范",
+              "abbr": "范",
+              "color": "#B39487",
+              "type": "audio",
+              "options": {
+                "types": [
+                  "mpeg",
+                  "mp4",
+                  "mp4a-latm"
+                ]
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            }
+          ],
+          "abbr": "DI",
+          "title": "Describe Image  ",
+          "introduction": "DI在练习时一定做到模板的熟练套用及流利读的保证，此题机经命中率较高，平时练习以机经题目为主，按图片种类突破练习。",
+          "instruction": "Look at the graph below. In 25 seconds, please speak into the microphone and describe in detail what the graph is showing. You will have 40 seconds to give your response.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        },
+        "testedCount": 0,
+        "submissionCount": 0
+      }
+    }
   ]
 ]

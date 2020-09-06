@@ -6,6 +6,11 @@ const commonStyles = StyleSheet.create({
   row: {
     flexDirection: 'row',
   },
+  equalItem: {
+    flexGrow: 1,
+    flexShrink: 1,
+    flexBasis: 0,
+  },
   gap: {
     padding: 2,
     paddingLeft: 4,
@@ -16,6 +21,9 @@ const commonStyles = StyleSheet.create({
     paddingLeft: 0,
     margin: 2,
     marginLeft: 0,
+  },
+  topGap: {
+    marginTop: 4,
   },
 
 
@@ -31,6 +39,13 @@ const commonStyles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomStyle: 'solid',
     borderBottomColor: '#9cc2e5',
+    backgroundColor: '#deeaf6',
+  },
+  sidebar: {
+    padding: 8,
+    borderRightWidth: 1,
+    borderRightStyle: 'solid',
+    borderRightColor: '#9cc2e5',
     backgroundColor: '#deeaf6',
   },
   analysis: {

@@ -1,103 +1,460 @@
-[[{
-  "question": {
-    "title": "Electric Car / 电力汽车",
-    "tags": [
-      "forecast",
-      "frequency",
-      "complex_normal"
-    ],
-    "published": true,
-    "status": 4,
-    "num": 2152,
-    "type": "PTE_RA",
-    "draft": {
-
-    },
-    "analysis": {
-      "translation_zh": "大学一年级学生设计并制造了一辆开创性的电动汽车，它可以自行充电。来自悉尼大学工程学院的50名学生花了5个月的时间，用胶合板、泡沫塑料和玻璃纤维制造出了芒果概念车。他们开发了规格并手工制造了这辆车。这是一个相当激进的设计:一个四轮驱动，每个轮子都有一个马达。",
-      "reading": "<p style=\"text-align:justify;\" class=\"MsoNormal\">First-year university students have designed<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> built <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> groundbreaking electri<data style=\"color:rgba(255, 192, 0, 1)\">c</data> car<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">that</cite> recharges itself. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> Fifty students <cite style=\"color:rgba(124, 123, 124, 1)\">from</cite> <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> University of Sydney’s Faculty <cite style=\"color:rgba(124, 123, 124, 1)\">of</cite> Engineering/ spent five months working together <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <u>bits <cite style=\"color:rgba(124, 123, 124, 1)\">of</cite></u> plywood<abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr>, foam <abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr><cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> fiberglass<abbr style=\"color:rgba(255, 0, 0, 1)\">↓</abbr><bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">to</cite> build <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> ManGo concept car. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi><cite style=\"color:rgba(124, 123, 124, 1)\">They</cite> develope<data style=\"color:rgba(255, 192, 0, 1)\">d</data> <cite style=\"color:rgba(124, 123, 124, 1)\">th</cite>e specifications<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> hand built <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> car. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi>It&#x27;s <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> pretty radical design: <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> four-wheel drive <cite style=\"color:rgba(124, 123, 124, 1)\"><u>with</u></cite> <cite style=\"color:rgba(124, 123, 124, 1)\"><u>a</u></cite> motor <cite style=\"color:rgba(124, 123, 124, 1)\">in</cite> each wheel. </p><p></p>",
-      "exampleAudio": {
-        "url": "https://downloads.91ddedu.com/undefined54f3ed47-07fd-4276-86b1-5a72595cc966.mp3"
-      },
-      "explainVideo_zh": {
-        "url": "https://downloads.91ddedu.com/uploads/video/2152/773feb58-4028-4829-b78a-33f73165b748.mp4",
-        "cover": "https://downloads.91ddedu.com/uploads/image/2152/6803d040-58a6-44cc-83ef-c40f9fcbd8ce.png"
+[
+  [
+    {
+      "question": {
+        "title": "Electric Car / 电力汽车",
+        "tags": [
+          "forecast",
+          "frequency",
+          "complex_normal"
+        ],
+        "published": true,
+        "status": 4,
+        "num": 2152,
+        "type": "PTE_RA",
+        "draft": {},
+        "analysis": {
+          "translation_zh": "大学一年级学生设计并制造了一辆开创性的电动汽车，它可以自行充电。来自悉尼大学工程学院的50名学生花了5个月的时间，用胶合板、泡沫塑料和玻璃纤维制造出了芒果概念车。他们开发了规格并手工制造了这辆车。这是一个相当激进的设计:一个四轮驱动，每个轮子都有一个马达。",
+          "reading": "<p style=\"text-align:justify;\" class=\"MsoNormal\">First-year university students have designed<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> built <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> groundbreaking electri<data style=\"color:rgba(255, 192, 0, 1)\">c</data> car<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">that</cite> recharges itself. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> Fifty students <cite style=\"color:rgba(124, 123, 124, 1)\">from</cite> <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> University of Sydney’s Faculty <cite style=\"color:rgba(124, 123, 124, 1)\">of</cite> Engineering/ spent five months working together <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <u>bits <cite style=\"color:rgba(124, 123, 124, 1)\">of</cite></u> plywood<abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr>, foam <abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr><cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> fiberglass<abbr style=\"color:rgba(255, 0, 0, 1)\">↓</abbr><bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">to</cite> build <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> ManGo concept car. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi><cite style=\"color:rgba(124, 123, 124, 1)\">They</cite> develope<data style=\"color:rgba(255, 192, 0, 1)\">d</data> <cite style=\"color:rgba(124, 123, 124, 1)\">th</cite>e specifications<bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> hand built <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> car. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi>It&#x27;s <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> pretty radical design: <cite style=\"color:rgba(124, 123, 124, 1)\">a</cite> four-wheel drive <cite style=\"color:rgba(124, 123, 124, 1)\"><u>with</u></cite> <cite style=\"color:rgba(124, 123, 124, 1)\"><u>a</u></cite> motor <cite style=\"color:rgba(124, 123, 124, 1)\">in</cite> each wheel. </p><p></p>",
+          "exampleAudio": {
+            "url": "https://downloads.91ddedu.com/undefined54f3ed47-07fd-4276-86b1-5a72595cc966.mp3"
+          },
+          "explainVideo_zh": {
+            "url": "https://downloads.91ddedu.com/uploads/video/2152/773feb58-4028-4829-b78a-33f73165b748.mp4",
+            "cover": "https://downloads.91ddedu.com/uploads/image/2152/6803d040-58a6-44cc-83ef-c40f9fcbd8ce.png"
+          }
+        },
+        "createdAt": "2020-07-14T02:24:49.245Z",
+        "updatedAt": "2020-07-16T08:17:05.780Z",
+        "content": "First year university students have designed and built a groundbreaking electric car that recharges itself. Fifty students from the University of Sydney's Faculty of Engineering spent five months working together bits of plywood, foam and fiberglass to build the ManGo concept car. They developed the specifications and hand built the car. It's a pretty radical design: a four wheel drive with a motor in each wheel.",
+        "id": "5f0d176df91248000b266013",
+        "typeObj": {
+          "key": "PTE_RA",
+          "label": "PTE RA",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "exampleAudio",
+              "label": "外教示范音频",
+              "title": "外教示范",
+              "abbr": "范",
+              "color": "#B39487",
+              "type": "audio",
+              "options": {
+                "types": [
+                  "mpeg"
+                ]
+              }
+            },
+            {
+              "key": "reading",
+              "label": "建议读法",
+              "title": "建议读法",
+              "abbr": "读",
+              "color": "#F4B55C",
+              "type": "reading"
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RA",
+          "title": "Read Aloud",
+          "introduction": "RA在练习时主要做到单词发音的准确及断句上面的注意，此题分值大对阅读分数有较高影响，机经命中率中等。",
+          "instruction": "Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40,
+              "enableSubmissionPage": true
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {}
+          }
+        },
+        "testedCount": 6,
+        "submissionCount": 0
       }
     },
-    "createdAt": "2020-07-14T02:24:49.245Z",
-    "updatedAt": "2020-07-16T08:17:05.780Z",
-    "content": "First year university students have designed and built a groundbreaking electric car that recharges itself. Fifty students from the University of Sydney's Faculty of Engineering spent five months working together bits of plywood, foam and fiberglass to build the ManGo concept car. They developed the specifications and hand built the car. It's a pretty radical design: a four wheel drive with a motor in each wheel.",
-    "id": "5f0d176df91248000b266013",
-    "typeObj": {
-      "key": "PTE_RA",
-      "label": "PTE RA",
-      "analysisList": [
-        {
-          "key": "translation_zh",
-          "label": "原文翻译(中文)",
-          "title": "原文翻译",
-          "abbr": "译",
-          "color": "#8C89D7",
-          "type": "translation",
-          "options": {
-            "lang": "zh"
+    {
+      "question": {
+        "title": "Recycling / 循环利用",
+        "tags": [
+          "frequency",
+          "complex_easy"
+        ],
+        "published": true,
+        "status": 4,
+        "num": 2153,
+        "type": "PTE_RA",
+        "draft": {},
+        "analysis": {
+          "translation_zh": "当我们回收时，用过的材料被转化成新产品，减少了对自然资源的消耗。如果用过的材料不回收，新产品是通过采矿和林业从地球上提取新鲜的原材料制成的。回收利用有助于保护重要的原材料，保护未来的自然栖息地。",
+          "reading": "<p style=\"text-align:justify;\" class=\"MsoNormal\"><cite style=\"color:rgba(124, 123, 124, 1)\">When</cite> <cite style=\"color:rgba(124, 123, 124, 1)\">we</cite> recycle, <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi>used materials <cite style=\"color:rgba(124, 123, 124, 1)\">are</cite> <u>converted <cite style=\"color:rgba(124, 123, 124, 1)\">into</cite></u> new products, <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi>reducing <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> need <cite style=\"color:rgba(124, 123, 124, 1)\">to</cite> consume natural resources. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi><cite style=\"color:rgba(124, 123, 124, 1)\">If</cite> used materials <cite style=\"color:rgba(124, 123, 124, 1)\">are</cite> <cite style=\"color:rgba(124, 123, 124, 1)\">not</cite> recycled, <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi>new products <cite style=\"color:rgba(124, 123, 124, 1)\">are</cite> made <cite style=\"color:rgba(124, 123, 124, 1)\">by</cite> extracting fresh<abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr>, <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> raw material <abbr style=\"color:rgba(255, 0, 0, 1)\">↓</abbr><cite style=\"color:rgba(124, 123, 124, 1)\">from</cite> <u><cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> Earth</u>, <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> through mining<abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr> <cite style=\"color:rgba(124, 123, 124, 1)\">and</cite> forestry<abbr style=\"color:rgba(255, 0, 0, 1)\">↓</abbr>. <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi> Recycling helps conserve important raw materials<abbr style=\"color:rgba(255, 0, 0, 1)\">↑</abbr> <bdi style=\"color:rgba(0, 176, 80, 1)\">/</bdi><cite style=\"color:rgba(124, 123, 124, 1)\">an</cite><data style=\"color:rgba(255, 192, 0, 1)\">d</data> protects natural habitats<abbr style=\"color:rgba(255, 0, 0, 1)\">↓</abbr> <cite style=\"color:rgba(124, 123, 124, 1)\">for</cite> <cite style=\"color:rgba(124, 123, 124, 1)\">the</cite> future. </p><p></p>",
+          "exampleAudio": {
+            "url": "https://downloads.91ddedu.com/undefined62e8b8dc-77ef-4baf-a2e3-06252b927263.mp3"
+          },
+          "explainVideo_zh": {
+            "url": "https://downloads.91ddedu.com/uploads/video/2153/27eec8ae-2b3f-41df-8405-f45e64dd43c2.mp4",
+            "cover": "https://downloads.91ddedu.com/uploads/image/2153/9732cedd-45b3-44cb-9683-8db16b9540ba.png"
           }
         },
-        {
-          "key": "exampleAudio",
-          "label": "外教示范音频",
-          "title": "外教示范",
-          "abbr": "范",
-          "color": "#B39487",
-          "type": "audio",
-          "options": {
-            "types": [
-              "mpeg"
-            ]
+        "createdAt": "2020-07-14T02:24:51.810Z",
+        "updatedAt": "2020-07-16T08:14:50.754Z",
+        "content": "When we recycle, used materials are converted into new products, reducing the need to consume natural resources. If used materials are not recycled, new products are made by extracting fresh, raw material from the Earth, through mining and forestry. Recycling helps conserve important raw materials and protects natural habitats for the future.",
+        "id": "5f0d1771f91248000b266014",
+        "typeObj": {
+          "key": "PTE_RA",
+          "label": "PTE RA",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "exampleAudio",
+              "label": "外教示范音频",
+              "title": "外教示范",
+              "abbr": "范",
+              "color": "#B39487",
+              "type": "audio",
+              "options": {
+                "types": [
+                  "mpeg"
+                ]
+              }
+            },
+            {
+              "key": "reading",
+              "label": "建议读法",
+              "title": "建议读法",
+              "abbr": "读",
+              "color": "#F4B55C",
+              "type": "reading"
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RA",
+          "title": "Read Aloud",
+          "introduction": "RA在练习时主要做到单词发音的准确及断句上面的注意，此题分值大对阅读分数有较高影响，机经命中率中等。",
+          "instruction": "Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40,
+              "enableSubmissionPage": true
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {}
           }
         },
-        {
-          "key": "reading",
-          "label": "建议读法",
-          "title": "建议读法",
-          "abbr": "读",
-          "color": "#F4B55C",
-          "type": "reading"
+        "testedCount": 2,
+        "submissionCount": 0
+      }
+    }
+  ],
+  [
+    {
+      "question": {
+        "title": "Children obesity / 儿童体重",
+        "tags": [
+          "forecast",
+          "frequency",
+          "complex_easy"
+        ],
+        "published": true,
+        "status": 4,
+        "num": 1586,
+        "type": "PTE_RL",
+        "draft": {},
+        "analysis": {
+          "originalText": "",
+          "exampleText": "This lecture mainly talks about children’s overweight or obese problems.\nFirstly, the speaker mentions that more than 20% of our national youth are overweight or obese, which means that the once umcommon diseases in children are now becoming very common.\nSecondly, the speaker says that the heart disease and type 2 diabetes that used to only occur in the adults of 50 or 60, are now being diagnosed at ages as young as 5 or 6.\nThirdly, the speaker says that complications are happening at earlier and earlier ages.\nIn conclusion, children obesity is a problem that needs to be addressed.",
+          "exampleText_translation_zh": "这节课主要讲儿童超重或肥胖问题。\n首先，演讲者提到我们国家超过20%的青少年超重或肥胖，这意味着曾经不常见的疾病在儿童中现在变得非常普遍。\n其次，这位演讲者说，心脏病和2型糖尿病过去只发生在50或60岁的成年人身上，现在已经在5或6岁就被诊断出来了。\n第三，演讲者说并发症发生在越来越早的年龄。\n总之，儿童肥胖是一个需要解决的问题。"
         },
-        {
-          "key": "explainVideo_zh",
-          "label": "讲解视频（中文）",
-          "title": "名师讲解",
-          "abbr": "讲",
-          "color": "#5F9FEB",
-          "type": "video",
-          "options": {
-            "types": [
-              "mp4"
-            ]
+        "createdAt": "2020-07-15T03:48:35.950Z",
+        "updatedAt": "2020-08-18T05:13:02.117Z",
+        "content": {
+          "image": {
+            "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/image/RL1/RL1.png"
           }
-        }
-      ],
-      "abbr": "RA",
-      "title": "Read Aloud",
-      "introduction": "RA在练习时主要做到单词发音的准确及断句上面的注意，此题分值大对阅读分数有较高影响，机经命中率中等。",
-      "instruction": "Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.",
-      "disableTitle": false,
-      "answerSheet": {
-        "comp": "RecordVoice",
-        "props": {
-          "maxDuration": 40,
-          "enableSubmissionPage": true
-        }
-      },
-      "answerContent": {
-        "comp": "Audio",
-        "props": {
-
-        }
+        },
+        "id": "5f0e7c937f587f000bf31c22",
+        "typeObj": {
+          "key": "PTE_RL",
+          "label": "PTE RL",
+          "analysisList": [
+            {
+              "key": "originalText",
+              "label": "音频原文",
+              "title": "音频原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "exampleText",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "exampleText_translation_zh",
+              "label": "参考答案(中文翻译)",
+              "title": "参考答案（翻译）",
+              "abbr": "答译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RL",
+          "title": "Re-tell Lecture",
+          "introduction": "RL在练习时主要做到关键词的提取和模板的熟练套用，流利度必须保证，此题机经命中率高，平时练习以机经题目为主。",
+          "instruction": "You will hear a lecture. After listening to the lecture, in 10 seconds, please speak into the microphone and retell what you have just heard from the lecture in your own words. You will have 40 seconds to give your response.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        },
+        "testedCount": 1,
+        "submissionCount": 0
       }
     },
-    "testedCount": 3,
-    "submissionCount": 0
-  }
-}]]
+    {
+      "question": {
+        "title": "Politics of Happiness / 幸福的政治",
+        "tags": [
+          "complex_easy"
+        ],
+        "published": true,
+        "status": 4,
+        "num": 1587,
+        "type": "PTE_RL",
+        "draft": {},
+        "analysis": {
+          "originalText": "Only one country, tiny little Bhutan, wedged between China and India, has adopted the Gross National Happiness as the central index of government policy, and actually has a good deal of success in education and in health and in economic growth and in environmental preservation. They have a rather sophisticated way of measuring the effects of different policies on people's happiness. But they are the only country to go that far. But you are now beginning to get other countries interested enough to do kind of white paper policy analyses about whether happiness research---what effects would it have if we used it more for public policy. You are beginning to get countries like Australia, France, Great Britain, that are considering publishing regular statistics on happiness. So it is beginning to become a subject of greater interest, for policymakers and legislators in different advanced countries.",
+          "exampleText": "This lecture mainly talks about tiny little Bhutan who has adopted the Gross National Happiness as the central index of government policy.\nFirstly, the lecture mentions they have a rather sophisticated way of measuring the effects of different policies on people's happiness.\nSecondly, countries like Australia, France, Great Britain, are considering publishing regular statistics on happiness.\nThirdly, other countries are interested enough to do white paper policy analyses of happiness research.\nOverall, happiness index is becoming a subject of greater interest among policymakers and legislators.",
+          "exampleText_translation_zh": "这节课主要讲的是不丹将国民幸福总值作为政府政策的中心指标。\n首先，这堂课谈到他们有一种相当复杂的方法来衡量不同政策对人们幸福的影响。\n其次，像澳大利亚，法国，英国这样的国家，正在考虑定期公布幸福指数。\n第三，其他国家有足够的兴趣对幸福研究进行白皮书政策分析。\n总体而言，幸福指数正成为决策者和立法者更感兴趣的一个话题。",
+          "explainVideo_zh": {
+            "url": "https://downloads.91ddedu.com/uploads/video/1587/6748db0b-2947-4cbd-9f7a-fe2c172e9e2c.mp4",
+            "cover": "https://downloads.91ddedu.com/uploads/image/1587/58658575-a039-4317-b4b5-08eccd477628.png"
+          }
+        },
+        "createdAt": "2020-07-15T03:48:36.203Z",
+        "updatedAt": "2020-08-18T05:13:04.767Z",
+        "content": {
+          "audio": {
+            "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/audio/RL2/RL2F.m4a"
+          },
+          "image": {
+            "url": "https://dengdeng-prod.oss-cn-shenzhen.aliyuncs.com/uploads/image/RL2/RL2.png"
+          }
+        },
+        "id": "5f0e7c947f587f000bf31c23",
+        "typeObj": {
+          "key": "PTE_RL",
+          "label": "PTE RL",
+          "analysisList": [
+            {
+              "key": "originalText",
+              "label": "音频原文",
+              "title": "音频原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "exampleText",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "exampleText_translation_zh",
+              "label": "参考答案(中文翻译)",
+              "title": "参考答案（翻译）",
+              "abbr": "答译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RL",
+          "title": "Re-tell Lecture",
+          "introduction": "RL在练习时主要做到关键词的提取和模板的熟练套用，流利度必须保证，此题机经命中率高，平时练习以机经题目为主。",
+          "instruction": "You will hear a lecture. After listening to the lecture, in 10 seconds, please speak into the microphone and retell what you have just heard from the lecture in your own words. You will have 40 seconds to give your response.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        },
+        "testedCount": 0,
+        "submissionCount": 0
+      }
+    }
+  ]
+]

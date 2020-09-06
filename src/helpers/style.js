@@ -23,6 +23,8 @@ const commonStyles = StyleSheet.create({
     borderWidth: 1,
     borderStyle: 'solid',
     borderColor: '#9cc2e5',
+    marginTop: 10,
+    marginBottom: 10,
   },
   header: {
     padding: 8,

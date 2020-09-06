@@ -3,6 +3,7 @@ import {
   View,
   Text,
   Link,
+  StyleSheet,
 } from '@react-pdf/renderer'
 import PortraitBase from './PortraitBase'
 import Image from '../components/Image'
@@ -12,7 +13,15 @@ import {
 } from '../helpers'
 import commonStyles from '../helpers/style'
 
-const ReadAloudModel = ({
+const styles = StyleSheet.create({
+  questionImage: {
+    height: 240,
+    margin: 20,
+    objectFit: 'contain',
+  },
+})
+
+const RetellLectureModel = ({
   sequence,
   model,
   ...rest
@@ -21,7 +30,7 @@ const ReadAloudModel = ({
   const id = question.num
 
   const QuestionComponent = () => (
-    <Text style={commonStyles.question}>{ question.content }</Text>
+    <Image src={question.content.image.url} style={styles.questionImage} />
   )
 
   const AnalysisComponent = () => (
@@ -59,4 +68,4 @@ const ReadAloudModel = ({
   )
 }
 
-export default ReadAloudModel
+export default RetellLectureModel

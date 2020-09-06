@@ -8,6 +8,7 @@ import DemoFile from './entries/DemoFile'
 import ReadAloudModel from './models/ReadAloudModel'
 import RetellLectureModel from './models/RetellLectureModel'
 import DescribeImageModel from './models/DescribeImageModel'
+import RepeatSentenceModel from './models/RepeatSentenceModel'
 
 import data from './data'
 
@@ -20,6 +21,7 @@ const modelMappings = {
   PTE_RA: ReadAloudModel,
   PTE_RL: RetellLectureModel,
   PTE_DI: DescribeImageModel,
+  PTE_RS: RepeatSentenceModel,
 }
 
 ReactPDF.render(

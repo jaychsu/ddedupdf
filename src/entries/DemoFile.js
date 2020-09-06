@@ -1,30 +1,28 @@
 import React from 'react'
 import {
   Document,
-  Page,
-  StyleSheet,
 } from '@react-pdf/renderer'
 
-import ReadAloudModel from '../models/ReadAloudModel'
+import BasicLayout from '../layouts/BasicLayout'
 
-import data from '../data'
-
-
-const styles = StyleSheet.create({
-  doc: {
-    fontFamily: 'MicrosoftYaHei',
-    fontSize: 12,
-  },
-})
-
-const DemoFile = () => (
+const DemoFile = ({
+  modelMappings,
+  data,
+}) => (
   <Document>
-    <Page size="A4" style={styles.doc}>
-      <ReadAloudModel
-        sequence={1}
-        model={data[0][0]}
-      />
-    </Page>
+    <BasicLayout>
+      {
+        data.map(categories => categories.map((model, i) => {
+          const Model = modelMappings[model.question.type]
+          if (!Model) {
+            console.error(`[Error] cannot find such model type: ${model.question.type}.`)
+            return null
+          }
+
+          return <Model key={i} sequence={i + 1} model={model} />
+        }))
+      }
+    </BasicLayout>
   </Document>
 )
 

@@ -1,30 +1,26 @@
 import React from 'react'
 import ReactPDF, {
-  Document,
   Font,
 } from '@react-pdf/renderer'
 
-import BasicLayout from './layouts/BasicLayout'
+import DemoFile from './entries/DemoFile'
+
 import ReadAloudModel from './models/ReadAloudModel'
+import RetellLectureModel from './models/RetellLectureModel'
 
 import data from './data'
-
 
 Font.register({
   family: 'MicrosoftYaHei',
   src: `${__dirname}/fonts/msyh.ttf`,
 })
 
-const $Container = (
-  <Document>
-    <BasicLayout>
-      <ReadAloudModel
-        sequence={1}
-        model={data[0][0]}
-      />
-    </BasicLayout>
-  </Document>
+const modelMappings = {
+  PTE_RA: ReadAloudModel,
+  PTE_RL: RetellLectureModel,
+}
+
+ReactPDF.render(
+  <DemoFile modelMappings={modelMappings} data={data} />,
+  './pdf/demo.pdf'
 )
-
-
-ReactPDF.render($Container, './pdf/example.pdf')

@@ -12,8 +12,8 @@ const PortraitBase = ({
   sequence,
   model,
 
-  questionComponent,
-  analysisComponent,
+  QuestionComponent,
+  AnalysisComponent,
 }) => {
   const question = model.question
   const id = question.num
@@ -35,11 +35,11 @@ const PortraitBase = ({
           </View>
         </View>
         <View>
-          { questionComponent }
+          <QuestionComponent />
         </View>
       </View>
       <View style={commonStyles.analysis}>
-        { analysisComponent }
+        <AnalysisComponent />
       </View>
     </View>
   )

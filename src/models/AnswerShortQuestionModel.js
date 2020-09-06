@@ -13,10 +13,11 @@ const AnswerShortQuestionModel = ({
   ...rest
 }) => {
   const question = model.question
+  const typeMeta = model.type
 
   const QuestionComponent = () => (
     <View>
-      <Text>{ `${question.typeObj.abbr}${sequence}. ${question.analysis.original}` }</Text>
+      <Text>{ `${typeMeta.abbr}${sequence}. ${question.analysis.original}` }</Text>
       <Text style={commonStyles.topGap}>{ `Answer: ${question.analysis.answer}` }</Text>
     </View>
   )

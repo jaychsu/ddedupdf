@@ -4,34 +4,52 @@ import data from '../src/data'
 
 const isHTML = RegExp.prototype.test.bind(/(<([^>]+)>)/i)
 
-data.forEach(categories => categories.forEach(model => {
-  const question = model.question
-  const id = question.num
+function runTaskByBatch(n, tasks) {
+  function runTask() {
+    if (tasks.length === 0) { return }
 
-  // question.analysis[key]
-  question.typeObj.analysisList.map(({
-    key,
-    title,
-  }) => {
-    if (!isHTML(question.analysis[key])) { return }
+    tasks.pop()().then(runTask)
+  }
 
-    const filePath = `./src/images/model-${id}-${key}.png`
+  new Array(n).fill().forEach(runTask)
+}
 
-    htmlToImage({
-      output: filePath,
-      quality: 100,
-      transparent: true,
-      html: `
-        <html>
-          <body>
-            <style>document,html,body { line-height: 1.5 }</style>
-            ${question.analysis[key]}
-          </body>
-        </html>
-      `
-    }).then(() => {
-      trimImage(filePath, filePath)
-      console.log(`The image (${filePath}) was created successfully!`)
+function getTasks() {
+  const results = []
+
+  data.categories.forEach(category => category.types.forEach(type => type.questions.forEach(question => {
+    const id = question.num
+
+    type.analysisList.forEach(({
+      key,
+      title,
+    }) => {
+      if (!isHTML(question.analysis[key])) { return }
+
+      const filePath = `./src/images/model-${id}-${key}.png`
+
+      const lazyPromise = () => htmlToImage({
+        output: filePath,
+        quality: 100,
+        transparent: true,
+        html: `
+          <html>
+            <body>
+              <style>document,html,body { line-height: 1.5 }</style>
+              ${question.analysis[key]}
+            </body>
+          </html>
+        `
+      }).then(() => {
+        trimImage(filePath, filePath)
+        console.log(`The image (${filePath}) was created successfully!`)
+      })
+
+      results.push(lazyPromise)
     })
-  })
-}))
+  })))
+
+  return results
+}
+
+runTaskByBatch(5, getTasks())

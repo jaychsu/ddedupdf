@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "htmlimage": "babel-node ./bin/html-string-to-image.js",
+    "purepdf": "mkdir -p pdf; babel-node ./src/index.pdf.js",
+
     "prestart": "npm run htmlimage",
     "start": "webpack-dev-server --open --mode development --config webpack.web.config.js",
     "prebuild": "npm run htmlimage",

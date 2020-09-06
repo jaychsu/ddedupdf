@@ -23,6 +23,7 @@ const PortraitBase = ({
   AnalysisComponent,
 }) => {
   const question = model.question
+  const typeMeta = model.type
   const id = question.num
 
   return (
@@ -30,7 +31,7 @@ const PortraitBase = ({
       <View style={commonStyles.header}>
         <View style={commonStyles.metabar}>
           <View style={commonStyles.row}>
-            <Text style={commonStyles.rightGap}>{ `${question.typeObj.abbr}${sequence}.` }</Text>
+            <Text style={commonStyles.rightGap}>{ `${typeMeta.abbr}${sequence}.` }</Text>
             <Text style={commonStyles.gap}>{ question.title }</Text>
             <Label preset="qid">{ `#${id}` }</Label>
             { question.tags.filter(tag => !!~supportedTags.indexOf(tag)).map(key => <Label key={key} preset={key}>{ settings.QUESTION_TAG_MAP[key].label }</Label>) }
@@ -49,7 +50,7 @@ const PortraitBase = ({
         {
           AnalysisComponent
           ? <AnalysisComponent />
-          : question.typeObj.analysisList.filter(meta => !!question.analysis[meta.key]).map(({
+          : typeMeta.analysisList.filter(meta => !!question.analysis[meta.key]).map(({
               key,
               title,
             }) => (

@@ -26,7 +26,28 @@ const modelMappings = {
   PTE_ASQ: AnswerShortQuestionModel,
 }
 
-ReactPDF.render(
-  <DemoFile modelMappings={modelMappings} data={data} />,
-  './pdf/demo.pdf'
-)
+function runTaskByBatch(n, tasks) {
+  function runTask() {
+    if (tasks.length === 0) { return }
+
+    tasks.pop()().then(runTask)
+  }
+
+  new Array(n).fill().forEach(runTask)
+}
+
+function getTasks() {
+  return Object.keys(modelMappings).map(key => () => (
+    ReactPDF.render(
+      <DemoFile modelMappings={{ [key]: modelMappings[key] }} data={data} />,
+      `./pdf/${key}.pdf`
+    )
+  ))
+}
+
+runTaskByBatch(1, getTasks())
+
+// ReactPDF.render(
+//   <DemoFile modelMappings={modelMappings} data={data} />,
+//   './pdf/demo.pdf'
+// )

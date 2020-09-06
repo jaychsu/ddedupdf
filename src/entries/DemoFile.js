@@ -12,14 +12,22 @@ const DemoFile = ({
   <Document>
     <BasicLayout>
       {
-        data.map(categories => categories.map((model, i) => {
-          const Model = modelMappings[model.question.type]
+        data.categories.map(category => category.types.map(type => {
+          const Model = modelMappings[type.key]
           if (!Model) {
-            console.error(`[Error] cannot find such model type: ${model.question.type}.`)
+            console.error(`[Error] cannot find such model type: ${type.key}.`)
             return null
           }
 
-          return <Model key={i} sequence={i + 1} model={model} />
+          const model = {
+            question: null,
+            type,
+          }
+
+          return type.questions.map((question, i) => {
+            model.question = question
+            return <Model key={i} sequence={i + 1} model={model} />
+          })
         }))
       }
     </BasicLayout>

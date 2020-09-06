@@ -13,9 +13,10 @@ const RepeatSentenceModel = ({
   ...rest
 }) => {
   const question = model.question
+  const typeMeta = model.type
 
   const QuestionComponent = () => (
-    <Text>{ `${question.typeObj.abbr}${sequence}. ${question.analysis.originalText}` }</Text>
+    <Text>{ `${typeMeta.abbr}${sequence}. ${question.analysis.originalText}` }</Text>
   )
   const AnalysisComponent = () => (
     <View style={commonStyles.sectionStringContent}>{question.analysis.translation_zh.split('').map((c, i) => <Text key={i}>{c}</Text>)}</View>

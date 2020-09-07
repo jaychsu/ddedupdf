@@ -45,9 +45,9 @@ function getTasks() {
   ))
 }
 
-runTaskByBatch(1, getTasks())
+// runTaskByBatch(1, getTasks())
 
-// ReactPDF.render(
-//   <DemoFile modelMappings={modelMappings} data={data} />,
-//   './pdf/demo.pdf'
-// )
+ReactPDF.render(
+  <DemoFile modelMappings={modelMappings} data={data} />,
+  './pdf/demo.pdf'
+)

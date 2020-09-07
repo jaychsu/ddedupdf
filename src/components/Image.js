@@ -4,6 +4,7 @@ import {
 } from '@react-pdf/renderer'
 import {
   isNode,
+  isString,
   getExtension,
 } from '../helpers'
 
@@ -15,11 +16,15 @@ const XImage = ({
 }) => {
   let source = src
 
-  if (isNode() && src.startsWith('file://')) {
+  if (isNode() && isString(src) && src.startsWith('file://')) {
     source = {
       data: fs.readFileSync(`${__dirname}/../${src.slice(7)}`),
       format: getExtension(src),
     }
+  }
+
+  if (!source) {
+    return null
   }
 
   return (

@@ -5,6 +5,10 @@ import {
 import PortraitBase from './PortraitBase'
 import Image from '../components/Image'
 
+import {
+  deepFetch,
+} from '../helpers'
+
 const styles = StyleSheet.create({
   questionImage: {
     height: 240,
@@ -21,7 +25,7 @@ const RetellLectureModel = ({
   const question = model.question
 
   const QuestionComponent = () => (
-    <Image src={question.content.image.url} style={styles.questionImage} />
+    <Image src={deepFetch(question, ['content', 'image', 'url'])} style={styles.questionImage} />
   )
 
   return (

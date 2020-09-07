@@ -11,6 +11,7 @@ import commonStyles from '../helpers/style'
 import settings from '../data/settings.json'
 import {
   isHTML,
+  isString,
   supportedTags,
 } from '../helpers'
 
@@ -56,10 +57,10 @@ const PortraitBase = ({
             }) => (
               <View key={key} style={[
                 commonStyles.section,
-                typeof question.analysis[key] !== 'string' ? commonStyles.row : null
+                isString(question.analysis[key]) ? null : commonStyles.row,
               ]}>
                 <Text style={commonStyles.sectionTitle}>{ `${title}：` }</Text>
-                { typeof question.analysis[key] === 'string'
+                { isString(question.analysis[key])
                   ? isHTML(question.analysis[key])
                     ? <Image src={`file://images/model-${id}-${key}.png`} />
                     : <View style={commonStyles.sectionStringContent}>{question.analysis[key].split('').map((c, i) => <Text key={i}>{c}</Text>)}</View>

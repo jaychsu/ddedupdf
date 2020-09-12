@@ -20,7 +20,6 @@ const PortraitBase = ({
   model,
 
   QuestionComponent,
-  AnswerComponent,
   AnalysisComponent,
 }) => {
   const question = model.question

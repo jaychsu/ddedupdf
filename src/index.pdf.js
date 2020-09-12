@@ -10,6 +10,21 @@ import RetellLectureModel from './models/RetellLectureModel'
 import DescribeImageModel from './models/DescribeImageModel'
 import RepeatSentenceModel from './models/RepeatSentenceModel'
 import AnswerShortQuestionModel from './models/AnswerShortQuestionModel'
+import SummarizeWrittenTextModel from './models/SummarizeWrittenTextModel'
+import WriteEssayModel from './models/WriteEssayModel'
+import SummarizeSpokenTextModel from './models/SummarizeSpokenTextModel'
+import WriteFromDictationModel from './models/WriteFromDictationModel'
+import MultipleChoiceSingleLModel from './models/MultipleChoiceSingleLModel'
+import MultipleChoiceMultipleLModel from './models/MultipleChoiceMultipleLModel'
+import FillInTheBlanksLModel from './models/FillInTheBlanksLModel'
+import SelectMissingWordModel from './models/SelectMissingWordModel'
+import HighlightCorrectSummaryModel from './models/HighlightCorrectSummaryModel'
+import HighlightIncorrectWordsModel from './models/HighlightIncorrectWordsModel'
+import ReOrderParagraphsModel from './models/ReOrderParagraphsModel'
+import FillInTheBlanksRwModel from './models/FillInTheBlanksRwModel'
+import FillInTheBlanksRModel from './models/FillInTheBlanksRModel'
+import MultipleChoiceSingleRModel from './models/MultipleChoiceSingleRModel'
+import MultipleChoiceMultipleRModel from './models/MultipleChoiceMultipleRModel'
 
 import data from './data'
 
@@ -24,6 +39,21 @@ const modelMappings = {
   PTE_DI: DescribeImageModel,
   PTE_RS: RepeatSentenceModel,
   PTE_ASQ: AnswerShortQuestionModel,
+  PTE_SWT: SummarizeWrittenTextModel,
+  PTE_WE: WriteEssayModel,
+  PTE_SST: SummarizeSpokenTextModel,
+  PTE_WFD: WriteFromDictationModel,
+  PTE_MCS: MultipleChoiceSingleLModel,
+  PTE_MCM: MultipleChoiceMultipleLModel,
+  PTE_FIB: FillInTheBlanksLModel,
+  PTE_SMW: SelectMissingWordModel,
+  PTE_HCS: HighlightCorrectSummaryModel,
+  PTE_HIW: HighlightIncorrectWordsModel,
+  PTE_RO: ReOrderParagraphsModel,
+  PTE_FIB_RW: FillInTheBlanksRwModel,
+  PTE_FIB_R: FillInTheBlanksRModel,
+  PTE_MCS: MultipleChoiceSingleRModel,
+  PTE_MCM: MultipleChoiceMultipleRModel,
 }
 
 function runTaskByBatch(n, tasks) {

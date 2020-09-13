@@ -20,7 +20,11 @@ const PortraitBase = ({
   model,
 
   QuestionComponent,
+  BeforeAnalysisComponent,
   AnalysisComponent,
+  analysisFilter,
+
+  evalLineBreak,
 }) => {
   const question = model.question
   const typeMeta = model.type
@@ -29,7 +33,7 @@ const PortraitBase = ({
   return (
     <View style={commonStyles.container}>
       <View style={commonStyles.header}>
-        <View style={commonStyles.metabar}>
+        <View wrap={false} style={commonStyles.metabar}>
           <View style={commonStyles.row}>
             <Text style={commonStyles.rightGap}>{ `${typeMeta.abbr}${sequence}.` }</Text>
             <Text style={commonStyles.gap}>{ question.title }</Text>
@@ -48,9 +52,12 @@ const PortraitBase = ({
       </View>
       <View style={commonStyles.analysis}>
         {
+          BeforeAnalysisComponent && <BeforeAnalysisComponent />
+        }
+        {
           AnalysisComponent
           ? <AnalysisComponent />
-          : typeMeta.analysisList.filter(meta => !!question.analysis[meta.key]).map(({
+          : typeMeta.analysisList.filter(meta => !!question.analysis[meta.key] && (analysisFilter ? !!analysisFilter(meta) : true)).map(({
               key,
               title,
             }) => (
@@ -58,11 +65,13 @@ const PortraitBase = ({
                 commonStyles.section,
                 isString(question.analysis[key]) ? null : commonStyles.row,
               ]}>
-                <Text style={commonStyles.sectionTitle}>{ `${title}：` }</Text>
+                <Text wrap={false} style={commonStyles.sectionTitle}>{ `${title}：` }</Text>
                 { isString(question.analysis[key])
                   ? isHTML(question.analysis[key])
                     ? <Image src={`file://images/model-${id}-${key}.png`} />
-                    : <View style={commonStyles.sectionStringContent}>{question.analysis[key].split('').map((c, i) => <Text key={i}>{c}</Text>)}</View>
+                    : evalLineBreak
+                      ? <View wrap={false}>{question.analysis[key].split('\n').map((s, i) => <View key={i} style={commonStyles.sectionStringContent}>{s.split('').map((c, j) => <Text key={j}>{c}</Text>)}</View>)}</View>
+                      : <View wrap={false} style={commonStyles.sectionStringContent}>{question.analysis[key].split('').map((c, i) => <Text key={i}>{c}</Text>)}</View>
                   : !!~key.indexOf('Audio')
                     ? <Link href={`https://www.91ddedu.com/question/${id}`} style={commonStyles.link}>此题有音频示范，请见网站及 APP</Link>
                     : !!~key.indexOf('Video')

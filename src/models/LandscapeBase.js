@@ -30,7 +30,7 @@ const LandscapeBase = ({
         <View>
           <QuestionComponent />
         </View>
-        <View style={[commonStyles.metabar, commonStyles.topGap]}>
+        <View wrap={false} style={[commonStyles.metabar, commonStyles.topGap]}>
           <View style={commonStyles.row}>
             <Label preset="qid">{ `#${id}` }</Label>
             { question.tags.filter(tag => !!~supportedTags.indexOf(tag)).map(key => <Label key={key} preset={key}>{ settings.QUESTION_TAG_MAP[key].label }</Label>) }

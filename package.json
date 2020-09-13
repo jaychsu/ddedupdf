@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "htmlimage": "babel-node ./bin/html-string-to-image.js",
+    "mergepdf": "babel-node ./bin/merge-pdf.js",
     "purepdf": "mkdir -p pdf; babel-node ./src/index.pdf.js",
-
     "prestart": "npm run htmlimage",
     "start": "webpack-dev-server --open --mode development --config webpack.web.config.js",
     "prebuild": "npm run htmlimage",
@@ -36,6 +36,7 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.1.0",
+    "easy-pdf-merge": "^0.2.5",
     "file-loader": "^6.1.0",
     "html-loader": "^1.3.0",
     "html-webpack-plugin": "^4.3.0",

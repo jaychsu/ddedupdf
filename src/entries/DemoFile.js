@@ -8,30 +8,42 @@ import BasicLayout from '../layouts/BasicLayout'
 const DemoFile = ({
   modelMappings,
   data,
-}) => (
-  <Document>
-    <BasicLayout>
-      {
-        data.categories.map(category => category.types.map(type => {
-          const Model = modelMappings[type.key]
-          if (!Model) {
-            console.error(`[Error] cannot find such model type: ${type.key}.`)
-            return null
-          }
+}) => {
+  let isStartIdxUsed = false
+  let i
+  return (
+    <Document>
+      <BasicLayout>
+        {
+          data.categories.map(category => category.types.map(type => {
+            const Model = modelMappings[type.key]
+            if (!Model) {
+              console.error(`[Error] cannot find such model type: ${type.key}.`)
+              return null
+            }
 
-          const model = {
-            question: null,
-            type,
-          }
+            if (!type.questions.length) {
+              return null
+            }
 
-          return type.questions.map((question, i) => {
-            model.question = question
-            return <Model key={i} sequence={i + 1} model={model} />
-          })
-        }))
-      }
-    </BasicLayout>
-  </Document>
-)
+            if (isStartIdxUsed) {
+              i = 0
+            } else {
+              isStartIdxUsed = true
+              i = data.startIdx
+            }
+
+            return type.questions.map((question, j) => {
+              return <Model key={j} sequence={i + j + 1} model={{
+                question,
+                type,
+              }} />
+            })
+          }))
+        }
+      </BasicLayout>
+    </Document>
+  )
+}
 
 export default DemoFile

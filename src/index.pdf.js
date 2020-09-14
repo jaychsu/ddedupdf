@@ -16,7 +16,6 @@ import SummarizeSpokenTextModel from './models/SummarizeSpokenTextModel'
 import WriteFromDictationModel from './models/WriteFromDictationModel'
 import MultipleChoiceSingleLModel from './models/MultipleChoiceSingleLModel'
 import MultipleChoiceMultipleLModel from './models/MultipleChoiceMultipleLModel'
-import FillInTheBlanksLModel from './models/FillInTheBlanksLModel'
 import SelectMissingWordModel from './models/SelectMissingWordModel'
 import HighlightCorrectSummaryModel from './models/HighlightCorrectSummaryModel'
 import HighlightIncorrectWordsModel from './models/HighlightIncorrectWordsModel'
@@ -43,17 +42,16 @@ const modelMappings = {
   PTE_WE: WriteEssayModel,
   PTE_SST: SummarizeSpokenTextModel,
   PTE_WFD: WriteFromDictationModel,
-  PTE_MCS: MultipleChoiceSingleLModel,
-  PTE_MCM: MultipleChoiceMultipleLModel,
-  PTE_FIB: FillInTheBlanksLModel,
+  // // PTE_L_MCS: MultipleChoiceSingleLModel,
+  // // PTE_L_MCM: MultipleChoiceMultipleLModel,
   PTE_SMW: SelectMissingWordModel,
   PTE_HCS: HighlightCorrectSummaryModel,
   PTE_HIW: HighlightIncorrectWordsModel,
   PTE_RO: ReOrderParagraphsModel,
   PTE_FIB_RW: FillInTheBlanksRwModel,
-  PTE_FIB_R: FillInTheBlanksRModel,
-  PTE_MCS: MultipleChoiceSingleRModel,
-  PTE_MCM: MultipleChoiceMultipleRModel,
+  PTE_FIB_R: FillInTheBlanksRwModel,  // FillInTheBlanksRModel
+  // // PTE_R_MCS: MultipleChoiceSingleRModel,
+  // // PTE_R_MCM: MultipleChoiceMultipleRModel,
 }
 
 function runTaskByBatch(n, tasks) {
@@ -67,17 +65,49 @@ function runTaskByBatch(n, tasks) {
 }
 
 function getTasks() {
-  return Object.keys(modelMappings).map(key => () => (
-    ReactPDF.render(
-      <DemoFile modelMappings={{ [key]: modelMappings[key] }} data={data} />,
-      `./pdf/${key}.pdf`
+  const queries = []
+  const qLimit = 40
+  let cnt = 0
+  let query
+
+  data.categories.forEach((category, i) => {
+    category.types.forEach((type, j) => {
+      type.questions.forEach((question, k) => {
+        if (!queries.length || cnt >= qLimit) {
+          query = pruneJson(data)
+          query.startIdx = k
+          queries.push(query)
+          cnt = 0
+        }
+
+        queries.slice(-1)[0].categories[i].types[j].questions.push(question)
+        cnt += 1
+      })
+    })
+  })
+
+  return queries.map((query, i) => () => {
+    console.log(`start to build ${i + 1} pdf.`)
+    return ReactPDF.render(
+      <DemoFile modelMappings={modelMappings} data={query} />,
+      `./pdf/demo-${i + 1}.pdf`
     )
-  ))
+  })
 }
 
-// runTaskByBatch(1, getTasks())
+function pruneJson(data) {
+  const newData = JSON.parse(JSON.stringify(data))
+  newData.categories.forEach(category => {
+    category.types.forEach(type => {
+      type.questions = []
+    })
+  })
+  return newData
+}
 
-ReactPDF.render(
-  <DemoFile modelMappings={modelMappings} data={data} />,
-  './pdf/demo.pdf'
-)
+runTaskByBatch(1, getTasks())
+
+// ReactPDF.render(
+//   <DemoFile modelMappings={modelMappings} data={data} />,
+//   './pdf/demo.pdf'
+// )

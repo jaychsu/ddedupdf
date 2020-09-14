@@ -117,4 +117,4 @@ pdf
 .yarn/install-state.gz
 .pnp.*
 
-mock*.json
+*mock*.json

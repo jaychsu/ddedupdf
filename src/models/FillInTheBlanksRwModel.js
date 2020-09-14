@@ -2,6 +2,7 @@ import React from 'react'
 import {
   View,
   Text,
+  Link,
 } from '@react-pdf/renderer'
 import PortraitBase from './PortraitBase'
 import Image from '../components/Image'

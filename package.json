@@ -7,6 +7,8 @@
     "htmlimage": "babel-node ./bin/html-string-to-image.js",
     "mergepdf": "babel-node ./bin/merge-pdf.js",
     "purepdf": "mkdir -p pdf; babel-node ./src/index.pdf.js",
+    "clean": "rm ./pdf/demo-*.pdf; rm ./src/images/model-*.png",
+
     "prestart": "npm run htmlimage",
     "start": "webpack-dev-server --open --mode development --config webpack.web.config.js",
     "prebuild": "npm run htmlimage",

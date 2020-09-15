@@ -3,6 +3,8 @@ import ReactPDF, {
   Font,
 } from '@react-pdf/renderer'
 
+import easyPdfMerge from 'easy-pdf-merge'
+
 import DemoFile from './entries/DemoFile'
 
 import ReadAloudModel from './models/ReadAloudModel'
@@ -54,11 +56,20 @@ const modelMappings = {
   // // PTE_R_MCM: MultipleChoiceMultipleRModel,
 }
 
-function runTaskByBatch(n, tasks) {
-  function runTask() {
-    if (tasks.length === 0) { return }
+function runTaskByBatch(n, tasks, callback) {
+  let hasStarted = false
+  const originTasks = tasks.slice()
 
-    tasks.pop()().then(runTask)
+  function runTask() {
+    if (tasks.length === 0) {
+      if (!hasStarted) {
+        hasStarted = true
+        callback(n, originTasks)
+      }
+      return
+    }
+
+    tasks.shift()().then(runTask)
   }
 
   new Array(n).fill().forEach(runTask)
@@ -87,7 +98,7 @@ function getTasks() {
   })
 
   return queries.map((query, i) => () => {
-    console.log(`start to build ${i + 1} pdf.`)
+    console.log(`start to build pdf: ${i + 1}/${queries.length}.`)
     return ReactPDF.render(
       <DemoFile modelMappings={modelMappings} data={query} />,
       `./pdf/demo-${i + 1}.pdf`
@@ -105,7 +116,17 @@ function pruneJson(data) {
   return newData
 }
 
-runTaskByBatch(1, getTasks())
+runTaskByBatch(1, getTasks(), (n, tasks) => {
+  const cntPdfs = tasks.length
+
+  easyPdfMerge(new Array(cntPdfs).fill().map((_, i) => `./pdf/demo-${i + 1}.pdf`), './pdf/demo.pdf', err => {
+    if (err) {
+      return console.log(err)
+    }
+
+    console.log('Successfully merged!')
+  })
+})
 
 // ReactPDF.render(
 //   <DemoFile modelMappings={modelMappings} data={data} />,

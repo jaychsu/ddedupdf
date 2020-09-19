@@ -60,10 +60,15 @@ const modelMappings = {
 
 
 if (cluster.isMaster) {
-  const numCPUs = require('os').cpus().length
   const envVars = {
     tasks: getTasks(),
   }
+
+  if (!envVars.tasks.length) {
+    process.exit()
+  }
+
+  const numCPUs = Math.min(require('os').cpus().length, envVars.tasks.length)
 
   for (let i = 0; i < numCPUs; i++) {
     setTimeout(() => registerWorkerEvent(cluster.fork(), envVars), i * 100)
@@ -85,6 +90,8 @@ if (cluster.isMaster) {
     ).then(() => {
       console.log(`[Info] finished to build pdf: ${fileName}.`)
       process.send({ isFinished: true })
+    }).catch(error => {
+      process.send({ isFinished: false, error })
     })
   })
 
@@ -97,8 +104,12 @@ function registerWorkerEvent(worker, envVars) {
 
   if (!numTasks) { return }
 
-  worker.on('message', ({ isFinished = false }) => {
-    if (!isFinished) { return }
+  worker.on('message', ({ isFinished = false, error }) => {
+    if (!isFinished) {
+      console.error('[Error] ', error)
+      process.exit()
+      return
+    }
 
     if (!tasks.length) {
       worker.kill()

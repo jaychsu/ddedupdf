@@ -8,7 +8,7 @@ function runTaskByBatch(n, tasks) {
   function runTask() {
     if (tasks.length === 0) { return }
 
-    tasks.shift()().then(runTask)
+    tasks.pop()().then(runTask)
   }
 
   new Array(n).fill().forEach(runTask)

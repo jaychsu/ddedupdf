@@ -3,6 +3,7 @@ import ReactPDF, {
   Font,
 } from '@react-pdf/renderer'
 
+import cluster from 'cluster'
 import easyPdfMerge from 'easy-pdf-merge'
 
 import DemoFile from './entries/DemoFile'
@@ -56,23 +57,81 @@ const modelMappings = {
   // // PTE_R_MCM: MultipleChoiceMultipleRModel,
 }
 
-function runTaskByBatch(n, tasks, callback) {
-  let hasStarted = false
-  const originTasks = tasks.slice()
 
-  function runTask() {
-    if (tasks.length === 0) {
-      if (!hasStarted) {
-        hasStarted = true
-        callback(n, originTasks)
+if (cluster.isMaster) {
+  const numCPUs = require('os').cpus().length
+  const envVars = {
+    tasks: getTasks(),
+    hasRanCallback: false,
+  }
+
+  for (let i = 0; i < numCPUs; i++) {
+    setTimeout(() => registerWorkerEvent(cluster.fork(), envVars), i * 100)
+  }
+
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`[Info] worker ${worker.process.pid} died.`)
+  })
+} else {
+  console.log(`[Info] worker ${process.pid} started.`)
+  process.send({ isFinished: true })
+
+  process.on('message', ({ data }) => {
+    const { query, fileName, numTasks } = data
+
+    ReactPDF.render(
+      <DemoFile modelMappings={modelMappings} data={JSON.parse(query)} />,
+      fileName
+    ).then(() => {
+      console.log(`[Info] finished to build pdf: ${fileName}.`)
+      process.send({ isFinished: true })
+    })
+  })
+
+  // process.exit()
+}
+
+function registerWorkerEvent(worker, envVars) {
+  const tasks = envVars.tasks
+  const numTasks = tasks.length
+
+  if (!numTasks) { return }
+
+  worker.on('message', ({ isFinished = false }) => {
+    if (!isFinished) { return }
+
+    if (!tasks.length) {
+      worker.kill()
+
+      if (!envVars.hasRanCallback) {
+        envVars.hasRanCallback = true
+
+        if (numTasks > 1) {
+          easyPdfMerge(new Array(numTasks).fill().map((_, i) => `./pdf/demo-${i + 1}.pdf`), './pdf/demo.pdf', err => {
+            if (err) {
+              return console.log(err)
+            }
+
+            console.log('Successfully merged!')
+          })
+        }
       }
       return
     }
 
-    tasks.shift()().then(runTask)
-  }
+    const query = tasks.shift()
+    const seq = numTasks - tasks.length
+    const fileName = `./pdf/demo-${seq}.pdf`
+    console.log(`[Info] starting to build pdf: ${seq}/${numTasks}.`)
 
-  new Array(n).fill().forEach(runTask)
+    worker.send({
+      data: {
+        query,
+        fileName,
+        numTasks,
+      },
+    })
+  })
 }
 
 function getTasks() {
@@ -97,13 +156,7 @@ function getTasks() {
     })
   })
 
-  return queries.map((query, i) => () => {
-    console.log(`start to build pdf: ${i + 1}/${queries.length}.`)
-    return ReactPDF.render(
-      <DemoFile modelMappings={modelMappings} data={query} />,
-      `./pdf/demo-${i + 1}.pdf`
-    )
-  })
+  return queries.map(query => JSON.stringify(query))
 }
 
 function pruneJson(data) {
@@ -115,20 +168,3 @@ function pruneJson(data) {
   })
   return newData
 }
-
-runTaskByBatch(1, getTasks(), (n, tasks) => {
-  const cntPdfs = tasks.length
-
-  easyPdfMerge(new Array(cntPdfs).fill().map((_, i) => `./pdf/demo-${i + 1}.pdf`), './pdf/demo.pdf', err => {
-    if (err) {
-      return console.log(err)
-    }
-
-    console.log('Successfully merged!')
-  })
-})
-
-// ReactPDF.render(
-//   <DemoFile modelMappings={modelMappings} data={data} />,
-//   './pdf/demo.pdf'
-// )

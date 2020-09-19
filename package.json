@@ -13,8 +13,7 @@
     "prebuild": "yarn clean; yarn htmlimage",
     "build": "webpack --mode production --config webpack.web.config.js",
     "prepdf": "yarn clean; yarn htmlimage",
-    "pdf": "mkdir -p pdf; babel-node ./src/index.pdf.js",
-    "postpdf": "yarn clean"
+    "pdf": "mkdir -p pdf; babel-node ./src/index.pdf.js"
   },
   "repository": {
     "type": "git",

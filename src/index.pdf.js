@@ -3,6 +3,7 @@ import ReactPDF, {
   Font,
 } from '@react-pdf/renderer'
 
+import fs from 'fs'
 import cluster from 'cluster'
 import easyPdfMerge from 'easy-pdf-merge'
 
@@ -62,7 +63,6 @@ if (cluster.isMaster) {
   const numCPUs = require('os').cpus().length
   const envVars = {
     tasks: getTasks(),
-    hasRanCallback: false,
   }
 
   for (let i = 0; i < numCPUs; i++) {
@@ -103,9 +103,7 @@ function registerWorkerEvent(worker, envVars) {
     if (!tasks.length) {
       worker.kill()
 
-      if (!envVars.hasRanCallback) {
-        envVars.hasRanCallback = true
-
+      if (!Object.keys(cluster.workers).length) {
         if (numTasks > 1) {
           easyPdfMerge(new Array(numTasks).fill().map((_, i) => `./pdf/demo-${i + 1}.pdf`), './pdf/demo.pdf', err => {
             if (err) {
@@ -113,6 +111,14 @@ function registerWorkerEvent(worker, envVars) {
             }
 
             console.log('Successfully merged!')
+          })
+        } else {
+          fs.rename('./pdf/demo-1.pdf', './pdf/demo.pdf', err => {
+            if (err) {
+              return console.log(err)
+            }
+
+            console.log('Successfully finished!')
           })
         }
       }

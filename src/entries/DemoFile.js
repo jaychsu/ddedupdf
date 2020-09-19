@@ -18,7 +18,7 @@ const DemoFile = ({
           data.categories.map(category => category.types.map(type => {
             const Model = modelMappings[type.key]
             if (!Model) {
-              console.error(`[Error] cannot find such model type: ${type.key}.`)
+              console.error(`[Warning] cannot find such model type: ${type.key}.`)
               return null
             }
 

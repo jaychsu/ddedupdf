@@ -34,6 +34,10 @@ module.exports = {
       },
     ]
   },
+  externals: {
+    fs: 'commonjs fs',
+    path: 'commonjs path',
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',

@@ -1,0 +1,2293 @@
+{
+  "PTE_CATEGORY_LIST": [
+    {
+      "key": "speaking",
+      "title": "Speaking",
+      "name": "口语",
+      "description": "口语练习",
+      "color": "rgba(236, 128, 141, 1)",
+      "icon": "AudioOutlined",
+      "types": [
+        {
+          "key": "PTE_RA",
+          "label": "PTE RA",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "exampleAudio",
+              "label": "外教示范音频",
+              "title": "外教示范",
+              "abbr": "范",
+              "color": "#B39487",
+              "type": "audio",
+              "options": {
+                "types": [
+                  "mpeg"
+                ]
+              }
+            },
+            {
+              "key": "reading",
+              "label": "建议读法",
+              "title": "建议读法",
+              "abbr": "读",
+              "color": "#F4B55C",
+              "type": "reading"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RA",
+          "title": "Read Aloud",
+          "introduction": "RA在练习时主要做到单词发音的准确及断句上面的注意，此题分值大对阅读分数有较高影响，机经命中率中等。",
+          "instruction": "Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40,
+              "enableSubmissionPage": true
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {}
+          }
+        },
+        {
+          "key": "PTE_RS",
+          "label": "PTE RS",
+          "analysisList": [
+            {
+              "key": "originalText",
+              "label": "原文（可标注）",
+              "title": "原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "reading"
+            },
+            {
+              "key": "translation_zh",
+              "label": "翻译(中文)",
+              "title": "翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            }
+          ],
+          "abbr": "RS",
+          "title": "Repeat Sentence",
+          "introduction": "RS在练习时主要做到单词发音的准确及流利度的保证，此题分值大对口语及听力影响很高，机经命中率较低。",
+          "instruction": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+          "disableTitle": true,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40,
+              "enableSubmissionPage": true
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {}
+          }
+        },
+        {
+          "key": "PTE_DI",
+          "label": "PTE DI",
+          "analysisList": [
+            {
+              "key": "refAnswer",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "refAnswerAudio",
+              "label": "优秀示范",
+              "title": "优秀示范",
+              "abbr": "范",
+              "color": "#B39487",
+              "type": "audio",
+              "options": {
+                "types": [
+                  "mpeg",
+                  "mp4",
+                  "mp4a-latm"
+                ]
+              }
+            }
+          ],
+          "abbr": "DI",
+          "title": "Describe Image  ",
+          "introduction": "DI在练习时一定做到模板的熟练套用及流利读的保证，此题机经命中率较高，平时练习以机经题目为主，按图片种类突破练习。",
+          "instruction": "Look at the graph below. In 25 seconds, please speak into the microphone and describe in detail what the graph is showing. You will have 40 seconds to give your response.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        },
+        {
+          "key": "PTE_RL",
+          "label": "PTE RL",
+          "analysisList": [
+            {
+              "key": "originalText",
+              "label": "音频原文",
+              "title": "音频原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "exampleText",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "exampleText_translation_zh",
+              "label": "参考答案(中文翻译)",
+              "title": "参考答案（翻译）",
+              "abbr": "答译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RL",
+          "title": "Re-tell Lecture",
+          "introduction": "RL在练习时主要做到关键词的提取和模板的熟练套用，流利度必须保证，此题机经命中率高，平时练习以机经题目为主。",
+          "instruction": "You will hear a lecture. After listening to the lecture, in 10 seconds, please speak into the microphone and retell what you have just heard from the lecture in your own words. You will have 40 seconds to give your response.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 40
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        },
+        {
+          "key": "PTE_ASQ",
+          "label": "PTE ASQ",
+          "analysisList": [
+            {
+              "key": "original",
+              "label": "音频原文",
+              "title": "音频原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "englishText",
+              "options": {
+                "lines": false
+              }
+            },
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "answer",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishWord",
+              "hideInPortal": true
+            },
+            {
+              "key": "answer_translation_zh",
+              "abbr": "答译",
+              "color": "#8C89D7",
+              "label": "参考答案(中文翻译)",
+              "title": "参考答案（翻译）",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            }
+          ],
+          "abbr": "ASQ",
+          "title": "Answer Short Question",
+          "introduction": "ASQ在练习时主要做到对生词发音的熟练，分值虽小但题目数量较多，因此不可轻视。此题机经命中率较高，可以考前集中过机经。",
+          "instruction": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+          "disableTitle": true,
+          "answerSheet": {
+            "comp": "RecordVoice",
+            "props": {
+              "maxDuration": 10
+            }
+          },
+          "answerContent": {
+            "comp": "Audio",
+            "props": {
+              "showScore": false
+            }
+          }
+        }
+      ],
+      "appIcon": "/static/speak.png"
+    },
+    {
+      "key": "listening",
+      "title": "Listening",
+      "name": "听力",
+      "icon": "icon-listen",
+      "description": "听力练习",
+      "color": "rgba(253, 144, 12, 1)",
+      "types": [
+        {
+          "key": "PTE_SST",
+          "label": "PTE SST",
+          "analysisList": [
+            {
+              "key": "audioText",
+              "label": "音频原文",
+              "title": "音频原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "audioTrans_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "refAnswer",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            },
+            {
+              "key": "refAnswerTrans_zh",
+              "label": "参考答案(中文翻译)",
+              "title": "参考答案(中文翻译)",
+              "abbr": "答译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "SST",
+          "title": "Summarize Spoken Text",
+          "introduction": "SST在练习时主要做到对关键信息的提取，拼写和语法的检查不可忽略；此题分值大对听力影响很高，机经命中率高，平时练习以机经题目为主。",
+          "instruction": "You will hear a short report. Write a summary for a fellow student who was not present. You should write 50-70 words. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response presents the key points presented in the lecture.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "WriteText",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "Text",
+            "props": {}
+          }
+        },
+        {
+          "key": "PTE_WFD",
+          "label": "PTE WFD",
+          "analysisList": [
+            {
+              "key": "audioText",
+              "label": "音频原文（可标注）",
+              "title": "音频原文",
+              "abbr": "原",
+              "color": "#6CBBB6",
+              "type": "reading"
+            },
+            {
+              "key": "audioTrans_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            }
+          ],
+          "abbr": "WFD",
+          "title": "Write From Dictation",
+          "introduction": "WFD在练习时一定注意拼写，考试可试词；此题分值非常大对听力和写作影响很高，机经命中率很高，平时练习以机经为主，题库数量较多高频优先。",
+          "instruction": "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+          "disableTitle": true,
+          "answerSheet": {
+            "comp": "WriteText",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "Text",
+            "props": {}
+          }
+        }
+      ],
+      "appIcon": "/static/listen.png"
+    },
+    {
+      "key": "writing",
+      "title": "Writing",
+      "name": "写作",
+      "icon": "icon--writing",
+      "appIcon": "/static/write.png",
+      "description": "写作练习",
+      "types": [
+        {
+          "key": "PTE_SWT",
+          "label": "PTE SWT",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "topicSentences",
+              "label": "主旨句",
+              "title": "主旨句",
+              "abbr": "主",
+              "color": "#F4B55C",
+              "type": "html",
+              "hideInPortal": true
+            },
+            {
+              "key": "modelEssay",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText"
+            },
+            {
+              "key": "modelEssayTranslation_zh",
+              "label": "参考答案(中文翻译)",
+              "title": "参考答案(中文翻译)",
+              "abbr": "答译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "SWT",
+          "title": "Summarize Written Text",
+          "introduction": "SWT在练习时注意对主旨句的提取，5-75个词一句话写完。此题分值较大，机经命中率高。",
+          "instruction": "Read the passage below and summarize it using one sentence. Type your response in the box at the bottom of the screen. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response presents the key points in the passage.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "WriteText",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "Text",
+            "props": {}
+          }
+        },
+        {
+          "key": "PTE_WE",
+          "label": "PTE WE",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "refAnswer",
+              "label": "参考答案",
+              "title": "参考答案",
+              "abbr": "答",
+              "color": "#DF5F52",
+              "type": "englishText",
+              "options": {
+                "lines": true
+              }
+            }
+          ],
+          "abbr": "WE",
+          "title": "Write Essay",
+          "introduction": "WE在练习时注意对模板的熟练套用以及打字速度的练习，200-300字要求。此题分值较大，机经命中率高。",
+          "instruction": "You will have 20 minutes to plan, write and revise an essay about the topic below. Your response will be judged on how well you develop a position, organize your ideas, present supporting details, and control the elements of standard written English. You should write 200-300 words.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "WriteText",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "Text",
+            "props": {}
+          }
+        }
+      ],
+      "color": "rgba(23, 201, 222, 1)"
+    },
+    {
+      "key": "reading",
+      "title": "Reading",
+      "name": "阅读",
+      "icon": "icon-icon_reading",
+      "appIcon": "/static/read.png",
+      "color": "rgba(73, 200, 177, 1)",
+      "description": "阅读练习",
+      "types": [
+        {
+          "key": "PTE_FIB_RW",
+          "label": "PTE FIB_RW",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "FIB_RW",
+          "title": "Fill in Blanks（FIB_RW）",
+          "introduction": "FIB_RW在练习时不要只做空词的记忆，考试时会有“换空”情况，尽量通篇阅读文章并理解，PTE阅读词汇较难需多积累；此题机经命中率中等，练习以机经为主。",
+          "instruction": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "FIB_RW",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "Text",
+            "props": {}
+          }
+        },
+        {
+          "key": "PTE_RO",
+          "label": "PTE RO",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "RO",
+          "title": "Re-order Paragraphs",
+          "introduction": "RO在练习时多注意排序技巧的熟练,段落上下文关联词的提示和记忆; 此题机经命中率中等,练习机经时多做生词积累。",
+          "instruction": "The text boxes in the left panel have been placed in a random order. Restore the original order by dragging the text boxes from the left panel to the right panel.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "RO",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "RO",
+            "props": {}
+          }
+        },
+        {
+          "key": "PTE_FIB_R",
+          "label": "PTE FIB_R",
+          "analysisList": [
+            {
+              "key": "translation_zh",
+              "label": "原文翻译(中文)",
+              "title": "原文翻译",
+              "abbr": "译",
+              "color": "#8C89D7",
+              "type": "translation",
+              "options": {
+                "lang": "zh"
+              }
+            },
+            {
+              "key": "explainText_zh",
+              "label": "解析(中文)",
+              "title": "解析",
+              "abbr": "析",
+              "color": "#F4B55C",
+              "type": "text"
+            },
+            {
+              "key": "explainVideo_zh",
+              "label": "讲解视频（中文）",
+              "title": "名师讲解",
+              "abbr": "讲",
+              "color": "#5F9FEB",
+              "type": "video",
+              "options": {
+                "types": [
+                  "mp4"
+                ]
+              }
+            }
+          ],
+          "abbr": "FIB_R",
+          "title": "Fill in the blanks（FIB_R）",
+          "introduction": "FIB_R在练习时不要只做空词的记忆，考试时会有“换空”情况，尽量通篇阅读文章并理解，PTE阅读词汇较难需多积累；此题机经命中率中等，练习以机经为主。",
+          "instruction": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+          "disableTitle": false,
+          "answerSheet": {
+            "comp": "FIB_R",
+            "props": {}
+          },
+          "answerContent": {
+            "comp": "Text",
+            "props": {}
+          }
+        }
+      ]
+    }
+  ],
+  "PTE_QUESTION_MARK_LIST": [
+    {
+      "key": "LABEL_RED_MARK",
+      "title": "红色",
+      "color": "error"
+    },
+    {
+      "key": "LABEL_YELLOW_MARK",
+      "title": "黄色",
+      "color": "warning"
+    },
+    {
+      "key": "LABEL_GREEN_MARK",
+      "title": "绿色",
+      "color": "success"
+    }
+  ],
+  "PTE_QUESTION_FILTER_LIST": [
+    {
+      "title": "范围",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "预测",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "forecast"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "title": "高频",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "frequency"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "练习",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "未练习",
+          "value": {
+            "command": {
+              "submitted": false
+            }
+          }
+        },
+        {
+          "title": "已练习",
+          "value": {
+            "command": {
+              "submitted": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "难度",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "难",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "complex_hard"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "title": "中",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "complex_normal"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "title": "易",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "complex_easy"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "收藏",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "红色",
+          "value": {
+            "command": {
+              "inMarks": [
+                "LABEL_RED_MARK"
+              ]
+            }
+          }
+        },
+        {
+          "title": "绿色",
+          "value": {
+            "command": {
+              "inMarks": [
+                "LABEL_GREEN_MARK"
+              ]
+            }
+          }
+        },
+        {
+          "title": "黄色",
+          "value": {
+            "command": {
+              "inMarks": [
+                "LABEL_YELLOW_MARK"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "排序",
+      "options": [
+        {
+          "title": "题号",
+          "value": {
+            "sort": {
+              "num": 1
+            }
+          }
+        },
+        {
+          "title": "最新添加",
+          "value": {
+            "sort": {
+              "createdAt": -1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "PTE_QUESTION_APP_FILTER_LIST": [
+    {
+      "title": "范围",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "预测",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "forecast"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "title": "高频",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "frequency"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "练习",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "未练习",
+          "value": {
+            "command": {
+              "submitted": false
+            }
+          }
+        },
+        {
+          "title": "已练习",
+          "value": {
+            "command": {
+              "submitted": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "难度",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "难",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "complex_hard"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "title": "中",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "complex_normal"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "title": "易",
+          "value": {
+            "query": {
+              "tags": {
+                "$all": [
+                  "complex_easy"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "收藏",
+      "options": [
+        {
+          "title": "不限"
+        },
+        {
+          "title": "红色",
+          "value": {
+            "command": {
+              "inMarks": [
+                "LABEL_RED_MARK"
+              ]
+            }
+          }
+        },
+        {
+          "title": "绿色",
+          "value": {
+            "command": {
+              "inMarks": [
+                "LABEL_GREEN_MARK"
+              ]
+            }
+          }
+        },
+        {
+          "title": "黄色",
+          "value": {
+            "command": {
+              "inMarks": [
+                "LABEL_YELLOW_MARK"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "PTE_QUESTION_SORT_OPTIONS": [
+    {
+      "title": "题号",
+      "value": {
+        "sort": {
+          "num": 1
+        }
+      }
+    },
+    {
+      "title": "最新添加",
+      "value": {
+        "sort": {
+          "createdAt": -1
+        }
+      }
+    }
+  ],
+  "PTE_QUESTION_TESTED_MARK": {
+    "key": "TESTED_MARK",
+    "label": "确认考过标"
+  },
+  "QUESTION_TYPES": {
+    "PTE_RA": {
+      "key": "PTE_RA",
+      "label": "PTE RA",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "exampleAudio",
+          "label": "外教示范音频",
+          "title": "外教示范",
+          "abbr": "范",
+          "color": "#B39487",
+          "type": "audio",
+          "options": {
+            "types": [
+              "mpeg"
+            ]
+          }
+        },
+        {
+          "key": "reading",
+          "label": "建议读法",
+          "title": "建议读法",
+          "abbr": "读",
+          "color": "#F4B55C",
+          "type": "reading"
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "RA",
+      "title": "Read Aloud",
+      "introduction": "RA在练习时主要做到单词发音的准确及断句上面的注意，此题分值大对阅读分数有较高影响，机经命中率中等。",
+      "instruction": "Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_RS": {
+      "key": "PTE_RS",
+      "label": "PTE RS",
+      "analysisList": [
+        {
+          "key": "originalText",
+          "label": "原文（可标注）",
+          "title": "原文",
+          "abbr": "原",
+          "color": "#6CBBB6",
+          "type": "reading"
+        },
+        {
+          "key": "translation_zh",
+          "label": "翻译(中文)",
+          "title": "翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        }
+      ],
+      "abbr": "RS",
+      "title": "Repeat Sentence",
+      "introduction": "RS在练习时主要做到单词发音的准确及流利度的保证，此题分值大对口语及听力影响很高，机经命中率较低。",
+      "instruction": "You will hear a sentence. Please repeat the sentence exactly as you hear it. You will hear the sentence only once.",
+      "disableTitle": true,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_RL": {
+      "key": "PTE_RL",
+      "label": "PTE RL",
+      "analysisList": [
+        {
+          "key": "originalText",
+          "label": "音频原文",
+          "title": "音频原文",
+          "abbr": "原",
+          "color": "#6CBBB6",
+          "type": "englishText",
+          "options": {
+            "lines": true
+          }
+        },
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "exampleText",
+          "label": "参考答案",
+          "title": "参考答案",
+          "abbr": "答",
+          "color": "#DF5F52",
+          "type": "englishText",
+          "options": {
+            "lines": true
+          }
+        },
+        {
+          "key": "exampleText_translation_zh",
+          "label": "参考答案(中文翻译)",
+          "title": "参考答案（翻译）",
+          "abbr": "答译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "RL",
+      "title": "Re-tell Lecture",
+      "introduction": "RL在练习时主要做到关键词的提取和模板的熟练套用，流利度必须保证，此题机经命中率高，平时练习以机经题目为主。",
+      "instruction": "You will hear a lecture. After listening to the lecture, in 10 seconds, please speak into the microphone and retell what you have just heard from the lecture in your own words. You will have 40 seconds to give your response.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {
+          "showScore": false
+        }
+      }
+    },
+    "PTE_RO": {
+      "key": "PTE_RO",
+      "label": "PTE RO",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainText_zh",
+          "label": "解析(中文)",
+          "title": "解析",
+          "abbr": "析",
+          "color": "#F4B55C",
+          "type": "text"
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "RO",
+      "title": "Re-order Paragraphs",
+      "introduction": "RO在练习时多注意排序技巧的熟练,段落上下文关联词的提示和记忆; 此题机经命中率中等,练习机经时多做生词积累。",
+      "instruction": "The text boxes in the left panel have been placed in a random order. Restore the original order by dragging the text boxes from the left panel to the right panel.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RO",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "RO",
+        "props": {}
+      }
+    },
+    "PTE_DI": {
+      "key": "PTE_DI",
+      "label": "PTE DI",
+      "analysisList": [
+        {
+          "key": "refAnswer",
+          "label": "参考答案",
+          "title": "参考答案",
+          "abbr": "答",
+          "color": "#DF5F52",
+          "type": "englishText",
+          "options": {
+            "lines": true
+          }
+        },
+        {
+          "key": "refAnswerAudio",
+          "label": "优秀示范",
+          "title": "优秀示范",
+          "abbr": "范",
+          "color": "#B39487",
+          "type": "audio",
+          "options": {
+            "types": [
+              "mpeg",
+              "mp4",
+              "mp4a-latm"
+            ]
+          }
+        }
+      ],
+      "abbr": "DI",
+      "title": "Describe Image  ",
+      "introduction": "DI在练习时一定做到模板的熟练套用及流利读的保证，此题机经命中率较高，平时练习以机经题目为主，按图片种类突破练习。",
+      "instruction": "Look at the graph below. In 25 seconds, please speak into the microphone and describe in detail what the graph is showing. You will have 40 seconds to give your response.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {
+          "showScore": false
+        }
+      }
+    },
+    "PTE_WE": {
+      "key": "PTE_WE",
+      "label": "PTE WE",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "refAnswer",
+          "label": "参考答案",
+          "title": "参考答案",
+          "abbr": "答",
+          "color": "#DF5F52",
+          "type": "englishText",
+          "options": {
+            "lines": true
+          }
+        }
+      ],
+      "abbr": "WE",
+      "title": "Write Essay",
+      "introduction": "WE在练习时注意对模板的熟练套用以及打字速度的练习，200-300字要求。此题分值较大，机经命中率高。",
+      "instruction": "You will have 20 minutes to plan, write and revise an essay about the topic below. Your response will be judged on how well you develop a position, organize your ideas, present supporting details, and control the elements of standard written English. You should write 200-300 words.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "WriteText",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "Text",
+        "props": {}
+      }
+    },
+    "PTE_ASQ": {
+      "key": "PTE_ASQ",
+      "label": "PTE ASQ",
+      "analysisList": [
+        {
+          "key": "original",
+          "label": "音频原文",
+          "title": "音频原文",
+          "abbr": "原",
+          "color": "#6CBBB6",
+          "type": "englishText",
+          "options": {
+            "lines": false
+          }
+        },
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "answer",
+          "label": "参考答案",
+          "title": "参考答案",
+          "abbr": "答",
+          "color": "#DF5F52",
+          "type": "englishWord",
+          "hideInPortal": true
+        },
+        {
+          "key": "answer_translation_zh",
+          "abbr": "答译",
+          "color": "#8C89D7",
+          "label": "参考答案(中文翻译)",
+          "title": "参考答案（翻译）",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        }
+      ],
+      "abbr": "ASQ",
+      "title": "Answer Short Question",
+      "introduction": "ASQ在练习时主要做到对生词发音的熟练，分值虽小但题目数量较多，因此不可轻视。此题机经命中率较高，可以考前集中过机经。",
+      "instruction": "You will hear a question. Please give a simple and short answer. Often just one or a few words is enough.",
+      "disableTitle": true,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 10
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {
+          "showScore": false
+        }
+      }
+    },
+    "PTE_SST": {
+      "key": "PTE_SST",
+      "label": "PTE SST",
+      "analysisList": [
+        {
+          "key": "audioText",
+          "label": "音频原文",
+          "title": "音频原文",
+          "abbr": "原",
+          "color": "#6CBBB6",
+          "type": "englishText",
+          "options": {
+            "lines": true
+          }
+        },
+        {
+          "key": "audioTrans_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "refAnswer",
+          "label": "参考答案",
+          "title": "参考答案",
+          "abbr": "答",
+          "color": "#DF5F52",
+          "type": "englishText",
+          "options": {
+            "lines": true
+          }
+        },
+        {
+          "key": "refAnswerTrans_zh",
+          "label": "参考答案(中文翻译)",
+          "title": "参考答案(中文翻译)",
+          "abbr": "答译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "SST",
+      "title": "Summarize Spoken Text",
+      "introduction": "SST在练习时主要做到对关键信息的提取，拼写和语法的检查不可忽略；此题分值大对听力影响很高，机经命中率高，平时练习以机经题目为主。",
+      "instruction": "You will hear a short report. Write a summary for a fellow student who was not present. You should write 50-70 words. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response presents the key points presented in the lecture.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "WriteText",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "Text",
+        "props": {}
+      }
+    },
+    "PTE_SWT": {
+      "key": "PTE_SWT",
+      "label": "PTE SWT",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "topicSentences",
+          "label": "主旨句",
+          "title": "主旨句",
+          "abbr": "主",
+          "color": "#F4B55C",
+          "type": "html",
+          "hideInPortal": true
+        },
+        {
+          "key": "modelEssay",
+          "label": "参考答案",
+          "title": "参考答案",
+          "abbr": "答",
+          "color": "#DF5F52",
+          "type": "englishText"
+        },
+        {
+          "key": "modelEssayTranslation_zh",
+          "label": "参考答案(中文翻译)",
+          "title": "参考答案(中文翻译)",
+          "abbr": "答译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "SWT",
+      "title": "Summarize Written Text",
+      "introduction": "SWT在练习时注意对主旨句的提取，5-75个词一句话写完。此题分值较大，机经命中率高。",
+      "instruction": "Read the passage below and summarize it using one sentence. Type your response in the box at the bottom of the screen. You have 10 minutes to finish this task. Your response will be judged on the quality of your writing and on how well your response presents the key points in the passage.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "WriteText",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "Text",
+        "props": {}
+      }
+    },
+    "PTE_WFD": {
+      "key": "PTE_WFD",
+      "label": "PTE WFD",
+      "analysisList": [
+        {
+          "key": "audioText",
+          "label": "音频原文（可标注）",
+          "title": "音频原文",
+          "abbr": "原",
+          "color": "#6CBBB6",
+          "type": "reading"
+        },
+        {
+          "key": "audioTrans_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        }
+      ],
+      "abbr": "WFD",
+      "title": "Write From Dictation",
+      "introduction": "WFD在练习时一定注意拼写，考试可试词；此题分值非常大对听力和写作影响很高，机经命中率很高，平时练习以机经为主，题库数量较多高频优先。",
+      "instruction": "You will hear a sentence. Type the sentence in the box below exactly as you hear it. Write as much of the sentence as you can. You will hear the sentence only once.",
+      "disableTitle": true,
+      "answerSheet": {
+        "comp": "WriteText",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "Text",
+        "props": {}
+      }
+    },
+    "PTE_FIB_R": {
+      "key": "PTE_FIB_R",
+      "label": "PTE FIB_R",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainText_zh",
+          "label": "解析(中文)",
+          "title": "解析",
+          "abbr": "析",
+          "color": "#F4B55C",
+          "type": "text"
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "FIB_R",
+      "title": "Fill in the blanks（FIB_R）",
+      "introduction": "FIB_R在练习时不要只做空词的记忆，考试时会有“换空”情况，尽量通篇阅读文章并理解，PTE阅读词汇较难需多积累；此题机经命中率中等，练习以机经为主。",
+      "instruction": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "FIB_R",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "Text",
+        "props": {}
+      }
+    },
+    "PTE_FIB_RW": {
+      "key": "PTE_FIB_RW",
+      "label": "PTE FIB_RW",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "原文翻译(中文)",
+          "title": "原文翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainText_zh",
+          "label": "解析(中文)",
+          "title": "解析",
+          "abbr": "析",
+          "color": "#F4B55C",
+          "type": "text"
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "FIB_RW",
+      "title": "Fill in Blanks（FIB_RW）",
+      "introduction": "FIB_RW在练习时不要只做空词的记忆，考试时会有“换空”情况，尽量通篇阅读文章并理解，PTE阅读词汇较难需多积累；此题机经命中率中等，练习以机经为主。",
+      "instruction": "In the text below some words are missing. Drag words from the box below to the appropriate place in the text. To undo an answer choice, drag the word back to the box below the text.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "FIB_RW",
+        "props": {}
+      },
+      "answerContent": {
+        "comp": "Text",
+        "props": {}
+      }
+    },
+    "PTE_R_MCS": {
+      "key": "PTE_R_MCS",
+      "label": "PTE Reading MCS",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "MCS",
+      "title": "Multiple Choice (Single)",
+      "introduction": "",
+      "instruction": "Read the text and answer the multiple-choice question by selecting the correct response. Only one response is correct.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_R_MCM": {
+      "key": "PTE_R_MCM",
+      "label": "PTE Reading MCM",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "MCM",
+      "title": "Multiple Choice (Multiple)",
+      "introduction": "",
+      "instruction": "Read the text and answer the question by selecting all the correct responses. More than one response is correct.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_L_MCS": {
+      "key": "PTE_L_MCS",
+      "label": "PTE Listening MCS",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "MCS",
+      "title": "Multiple Choice (Single)",
+      "introduction": "",
+      "instruction": "Listen to the recording and answer the single-choice question by selectingthe correct response . Only one response is correct.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_L_MCM": {
+      "key": "PTE_L_MCM",
+      "label": "PTE Listening MCM",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "MCM",
+      "title": "Multiple Choice (Multiple)",
+      "introduction": "",
+      "instruction": "Listen to the recording and answer the question by selecting all the correct responses. You will need to select more than one response.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_HCS": {
+      "key": "PTE_HCS",
+      "label": "PTE HCS",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "HCS",
+      "title": "Highlight Correct Summary",
+      "introduction": "",
+      "instruction": "You will hear a recording. Click on the paragraph that best relates to the recording.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_SMW": {
+      "key": "PTE_SMW",
+      "label": "PTE SMW",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "SMW",
+      "title": "Select Missing Word",
+      "introduction": "",
+      "instruction": "You will hear a recording about fiction writing. At the end of the recording the lost word or group of words has been reploced by a beep. Select the correct option to complete the recording.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    },
+    "PTE_HIW": {
+      "key": "PTE_HIW",
+      "label": "PTE HIW",
+      "analysisList": [
+        {
+          "key": "translation_zh",
+          "label": "题目翻译(中文)",
+          "title": "题目翻译",
+          "abbr": "译",
+          "color": "#8C89D7",
+          "type": "translation",
+          "options": {
+            "lang": "zh"
+          }
+        },
+        {
+          "key": "explainVideo_zh",
+          "label": "讲解视频（中文）",
+          "title": "名师讲解",
+          "abbr": "讲",
+          "color": "#5F9FEB",
+          "type": "video",
+          "options": {
+            "types": [
+              "mp4"
+            ]
+          }
+        }
+      ],
+      "abbr": "HIW",
+      "title": "Highlight Incorrect Words",
+      "introduction": "",
+      "instruction": "You will hear a recording. Below is a transcription of the recording. Some words in the transcription differ from what the speaker said. Please click on the words that are different.",
+      "disableTitle": false,
+      "answerSheet": {
+        "comp": "RecordVoice",
+        "props": {
+          "maxDuration": 40,
+          "enableSubmissionPage": true
+        }
+      },
+      "answerContent": {
+        "comp": "Audio",
+        "props": {}
+      }
+    }
+  },
+  "QUESTION_TAG_MAP": {
+    "complex_hard": {
+      "key": "complex_hard",
+      "label": "难",
+      "mutex": [
+        "complex"
+      ],
+      "appTagProps": {
+        "color": "#f5222d",
+        "bgColor": "#fff1f0",
+        "borderColor": "#fff1f0"
+      }
+    },
+    "complex_normal": {
+      "key": "complex_normal",
+      "label": "中",
+      "mutex": [
+        "complex"
+      ],
+      "appTagProps": {
+        "color": "#13c2c2",
+        "bgColor": "#e6fffb",
+        "borderColor": "#e6fffb"
+      }
+    },
+    "complex_easy": {
+      "key": "complex_easy",
+      "label": "易",
+      "mutex": [
+        "complex"
+      ],
+      "appTagProps": {
+        "color": "#52c41a",
+        "bgColor": "#f6ffed",
+        "borderColor": "#f6ffed"
+      }
+    },
+    "forecast": {
+      "key": "forecast",
+      "label": "预测",
+      "appTagProps": {
+        "color": "#fa541c",
+        "bgColor": "#FFF",
+        "borderColor": "#ffbb96"
+      }
+    },
+    "frequency": {
+      "key": "frequency",
+      "label": "高频",
+      "appTagProps": {
+        "color": "#f5222d",
+        "bgColor": "#FFF",
+        "borderColor": "#ffa39e"
+      }
+    },
+    "PTE_DI_BAR_TAG": {
+      "key": "PTE_DI_BAR_TAG",
+      "label": "柱图",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_DI_FLOW_TAG": {
+      "key": "PTE_DI_FLOW_TAG",
+      "label": "流程",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_DI_IMG_TAG": {
+      "key": "PTE_DI_IMG_TAG",
+      "label": "图片",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_DI_LINE_TAG": {
+      "key": "PTE_DI_LINE_TAG",
+      "label": "折线",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_DI_MAP_TAG": {
+      "key": "PTE_DI_MAP_TAG",
+      "label": "地图",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_DI_PIE_TAG": {
+      "key": "PTE_DI_PIE_TAG",
+      "label": "饼图",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_DI_TABLE_TAG": {
+      "key": "PTE_DI_TABLE_TAG",
+      "label": "表格",
+      "mutex": [
+        "PTE_DI_TAG"
+      ],
+      "only": [
+        "PTE_DI"
+      ]
+    },
+    "PTE_WE_ECO_TAG": {
+      "key": "PTE_WE_ECO_TAG",
+      "label": "经济",
+      "mutex": [
+        "PTE_WE_TAG"
+      ],
+      "only": [
+        "PTE_WE"
+      ]
+    },
+    "PTE_WE_EDU_TAG": {
+      "key": "PTE_WE_EDU_TAG",
+      "label": "教育",
+      "mutex": [
+        "PTE_WE_TAG"
+      ],
+      "only": [
+        "PTE_WE"
+      ]
+    },
+    "PTE_WE_ENV_TAG": {
+      "key": "PTE_WE_ENV_TAG",
+      "label": "环境",
+      "mutex": [
+        "PTE_WE_TAG"
+      ],
+      "only": [
+        "PTE_WE"
+      ]
+    },
+    "PTE_WE_HUM_TAG": {
+      "key": "PTE_WE_HUM_TAG",
+      "label": "人文",
+      "mutex": [
+        "PTE_WE_TAG"
+      ],
+      "only": [
+        "PTE_WE"
+      ]
+    },
+    "PTE_WE_SOC_TAG": {
+      "key": "PTE_WE_SOC_TAG",
+      "label": "社会",
+      "mutex": [
+        "PTE_WE_TAG"
+      ],
+      "only": [
+        "PTE_WE"
+      ]
+    },
+    "PTE_WE_TEC_TAG": {
+      "key": "PTE_WE_TEC_TAG",
+      "label": "科技",
+      "mutex": [
+        "PTE_WE_TAG"
+      ],
+      "only": [
+        "PTE_WE"
+      ]
+    },
+    "PTE_CONFIRMED_ORIGINAL": {
+      "key": "PTE_CONFIRMED_ORIGINAL",
+      "label": "确定全句",
+      "only": [
+        "PTE_WFD",
+        "PTE_RS"
+      ]
+    }
+  },
+  "APP": {
+    "privacyWebUrl": "https://duolingo.91ddedu.com/download/privacy.html",
+    "homePage": {
+      "searchBar": {
+        "placeholder": "输入题号，搜索题目"
+      },
+      "yuceText": "本周预测\n每周二更新",
+      "banner": {
+        "width": 750,
+        "height": 436.26,
+        "borderRadius": 0,
+        "swiperItems": [
+          {
+            "img": "/static/banner-yuce.png",
+            "opentype": "navigate",
+            "url": "/pages/question/list?pageType=yuce"
+          }
+        ]
+      }
+    },
+    "yucePage": {
+      "icon": "/static/yuceIcon.png",
+      "description": "登登PTE本周真题预测，每周二更新"
+    }
+  }
+}

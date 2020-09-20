@@ -1,16 +1,23 @@
 ddedupdf
 ======
 
-## Build pdf
+## Quick Start
+
+### Prepare data
+
+move data to `src/data/mock.json`
+
+### Build pdf
 
 ```shell
 > yarn pdf
 ```
 
-## Build web
+### Build web
 
 ```shell
-> yarn build
+> yarn start  # for develop
+> yarn build  # for release
 ```
 
 ## Issues
